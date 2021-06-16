@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ConduitApp.ConduitTest" time="16.437" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ConduitApp.ConduitTest" time="21.656" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="AU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.11\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire10471359861860003742\surefirebooter16136432428090718270.jar C:\Users\User\AppData\Local\Temp\surefire10471359861860003742 2021-06-16T10-02-28_834-jvmRun1 surefire15379562095338866737tmp surefire_012978058320974586959tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire3400675431559044601\surefirebooter8511220411413913788.jar C:\Users\User\AppData\Local\Temp\surefire3400675431559044601 2021-06-16T16-56-06_583-jvmRun1 surefire6228494940906997757tmp surefire_06560360403818212775tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Program Files\KarateGit\KarateAPIAutomation\target\test-classes;C:\Program Files\KarateGit\KarateAPIAutomation\target\classes;C:\Users\User\.m2\repository\com\intuit\karate\karate-junit5\1.0.1\karate-junit5-1.0.1.jar;C:\Users\User\.m2\repository\com\intuit\karate\karate-core\1.0.1\karate-core-1.0.1.jar;C:\Users\User\.m2\repository\org\graalvm\js\js-scriptengine\21.0.0\js-scriptengine-21.0.0.jar;C:\Users\User\.m2\repository\org\graalvm\sdk\graal-sdk\21.0.0\graal-sdk-21.0.0.jar;C:\Users\User\.m2\repository\org\graalvm\js\js\21.0.0\js-21.0.0.jar;C:\Users\User\.m2\repository\org\graalvm\regex\regex\21.0.0\regex-21.0.0.jar;C:\Users\User\.m2\repository\org\graalvm\truffle\truffle-api\21.0.0\truffle-api-21.0.0.jar;C:\Users\User\.m2\repository\com\ibm\icu\icu4j\67.1\icu4j-67.1.jar;C:\Users\User\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\User\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\User\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\User\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\User\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\User\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\User\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\User\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\User\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\User\.m2\repository\de\siegmar\fastcsv\1.0.4\fastcsv-1.0.4.jar;C:\Users\User\.m2\repository\info\picocli\picocli\4.5.2\picocli-4.5.2.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\User\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\User\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\User\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="karate.options" value="--tags @debug"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire10471359861860003742\surefirebooter16136432428090718270.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire3400675431559044601\surefirebooter8511220411413913788.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.11+9-LTS-194"/>
@@ -61,13 +61,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testAll[3][1]" classname="ConduitApp.ConduitTest" time="4.49"/>
-  <testcase name="testAll[3][2]" classname="ConduitApp.ConduitTest" time="0.972"/>
-  <testcase name="testAll[3][3]" classname="ConduitApp.ConduitTest" time="1.061"/>
-  <testcase name="testAll[3][4]" classname="ConduitApp.ConduitTest" time="1.132"/>
-  <testcase name="testAll[3][5]" classname="ConduitApp.ConduitTest" time="0.994"/>
-  <testcase name="testAll[3][6]" classname="ConduitApp.ConduitTest" time="1.285"/>
-  <testcase name="testAll[3][7]" classname="ConduitApp.ConduitTest" time="1.084"/>
-  <testcase name="testAll[3][8]" classname="ConduitApp.ConduitTest" time="1.143"/>
-  <testcase name="testAll[3][9]" classname="ConduitApp.ConduitTest" time="2.061"/>
+  <testcase name="testAll[3][1]" classname="ConduitApp.ConduitTest" time="19.349"/>
 </testsuite>
