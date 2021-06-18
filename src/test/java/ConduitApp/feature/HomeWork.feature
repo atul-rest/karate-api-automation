@@ -1,9 +1,12 @@
-@debug
+@ignore
 Feature: Home Work
 
 Background: Preconditions
+    * def dataGenerator = Java.type('helpers.DataGenerator')
     * def timeValidator = read('classpath:helpers/timeValidator.js')
+    * def randomComment = dataGenerator.getRandomComment()
     * url apiUrl
+
 
 Scenario: Favourite Articles
     Given params { limit: 10, offset: 0 }
@@ -51,6 +54,89 @@ Scenario: Favourite Articles
     When method Get
     Then status 200
     And match response.articles[*].slug contains articleId
+
+
+Scenario: Comment articles
+    Given params { limit: 10, offset: 0 }
+    Given path 'articles'
+    When method Get
+    Then status 200
+    * def slugId = response.articles[0].slug
+    * print slugId
+
+    Given path 'articles' ,slugId, 'comments'
+    When method Get
+    Then status 200
+    And match response ==
+    """
+        {
+            "comments": "##array"
+        }
+    """
+    * def commentsCount = response.comments.length
+    * print "---------------------"+commentsCount
+
+    Given path 'articles' ,slugId, 'comments'
+    And request
+    """
+        {
+            "comment": {
+                "body": #(randomComment)
+            }
+        }
+    """
+    When method Post
+    Then status 200
+    And match response ==
+    """
+        {
+            "comment": {
+                "id": '#number',
+                "createdAt": "#? timeValidator(_)",
+                "updatedAt": "#? timeValidator(_)",
+                "body": #(randomComment),
+                "author": {
+                    "username": "#string",
+                    "bio": "##array",
+                    "image": "#string",
+                    "following": '#boolean'
+                }
+            }
+        }
+    """
+    Given path 'articles' ,slugId, 'comments'
+    When method Get
+    Then status 200
+    * def GetCommentsCount = response.comments.length
+    * def commentId = response.comments[0].id
+    * print "==========="+GetCommentsCount
+    * print "==========="+commentsCount
+    And match GetCommentsCount == commentsCount + 1
+
+    Given path 'articles/'+slugId+'/comments/'+commentId
+    When method Delete
+    Then status 200
+
+    Given path 'articles' ,slugId, 'comments'
+    When method Get
+    Then status 200
+    * def GetCommentsCountAfterDelete = response.comments.length
+    * print "=============="+GetCommentsCountAfterDelete
+    And match GetCommentsCountAfterDelete == GetCommentsCount - 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 

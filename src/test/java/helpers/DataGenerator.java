@@ -29,5 +29,11 @@ public class DataGenerator {
         json.put("body", body);
         return json;
     }
+
+    public static String getRandomComment(){
+        Faker faker = new Faker();
+        String comment = faker.gameOfThrones().house();
+        return comment;
+    }
     
 }
