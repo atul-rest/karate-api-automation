@@ -38,7 +38,7 @@ Scenario: New user sign up
             }
         }
     """
-@parallel=false
+
 Scenario Outline: Validate sign up error messages
     Given path 'users'
     And request

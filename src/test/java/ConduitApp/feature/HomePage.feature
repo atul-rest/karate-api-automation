@@ -39,4 +39,55 @@ Feature: Tests for the Home Page
                 "favoritesCount": '#number'
             }
         """
+    
+    @debug
+    Scenario: Conditional Logic
+        Given params { limit: 10, offset: 0 }
+        Given path 'articles'
+        When method Get
+        Then status 200
+        * def favoritesCount = response.articles[0].favoritesCount
+        * def article = response.articles[0]
+
+        # * if (favoritesCount == 0) karate.call('classpath:helpers/AddLikes.feature', article)
+
+        * def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favoritesCount
+
+        Given params { limit: 10, offset: 0 }
+        Given path 'articles'
+        When method Get
+        Then status 200
+        And match response.articles[0].favoritesCount == result
+
+    
+    Scenario: Retry Call
+        * configure retry = {count: 10, interval: 5000}
+
+        Given params { limit: 10, offset: 0 }
+        Given path 'articles'
+        And retry until response.articles[0].favoritesCount == 1
+        When method Get
+        Then status 200
+
+    
+    Scenario: Sleep Call
+
+        * def sleep = function(pause){ java.lang.Thread.sleep(pause) }
+
+        Given params { limit: 10, offset: 0 }
+        Given path 'articles'
+        When method Get
+        * eval sleep(5000)
+        Then status 200
+
+
+
+
+
+
+
+
+
+         
+
         

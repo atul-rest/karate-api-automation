@@ -1,401 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <script type="text/javascript" src="res/jquery.min.js"></script>
-    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
-    <script type="text/javascript" src="res/bootstrap.min.js"></script>
-    <script type="text/javascript" src="res/karate-report.js"></script>
-    <title>ConduitApp.feature.HomePage</title>  
-  </head>
-  <body>   
-    <div id="root-container">
-      <div id="leftnav">
-                
-        <div>
-  <div class="nav-logo">
-    <a href="karate-summary.html">
-      <img src="karate-logo.svg" alt="Karate"/>
-    </a>
-    <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @debug</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
     </div>
   </div>
-  <div id="nav-type">
-    <div>Scenarios</div>
-  </div>         
-  <div id="nav-date">
-    <div>2021-06-21 01:09:32 pm</div>
-  </div>        
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Conduit Application</td>
+      <td>21 Jun 2021, 13:09</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
 </div>
 
-        <div class="nav-container">
-          <div class="nav-item passed">
-            <a href="#[3:44]"><span>[3:44]</span> <span>Conditional Logic</span></a>
-          </div>
-        </div>
-      </div>
-      <div id="content">
-        <div class="page-heading alert alert-primary">
-          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
-          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
-          <span class="feature-label">Feature:</span>
-          <span class="feature-path">ConduitApp/feature/HomePage.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Tests for the Home Page</span>
-          <span class="feature-description"></span>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[3:44]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">debug</a>
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[3:44]</span>
-                <span class="scenario-name">Conditional Logic</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>5294</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[3:44]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[3:44]bg"><div>
-  
 
-  
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
 
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url apiUrl</span>
-      </div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@debug</td>
+          <td      class="passed"    >19</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">19</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="6525977400">6.525</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
     </div>
-    <div class="time-cell passed">0</div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_3989574746.html">ConduitApp/feature/HomePage.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4075208210.html">@debug</a>
+</div>
+
+
+  <span class="lead-duration duration">6.525</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Conditional Logic</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
   </div>
 
-   
-  
-  
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
 
-  
 
-  <div class="preformatted" data-parent="0.5">13:09:26.745 &lt;&lt; lock released, cached callSingle: classpath:helpers/CreateToken.feature
-</div>   
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { limit: 10, offset: 0 }</span>
 
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.5.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">helpers.CreateToken</div>
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div class="time-cell passed">2494</div>
-    </div>
-    <div>
-      <div><div>
-  
+      <div class="step">
 
-  
 
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.4">
-      <div class="step-ref bg-step">4</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url apiUrl</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
+      <div class="step">
 
-   
-  
-  
 
-  
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
 
-  <div class="preformatted" data-parent="0.5.0.call.0.4">13:09:24.114 karate.env system property was: null 
-13:09:24.132 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
-</div>   
-
-  
+  <span class="lead-duration duration">1.713</span>
 
 </div>
-</div>
-      <div><div>
-  
 
-  
 
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
       </div>
-    </div>
-    <div class="time-cell passed">19</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {&quot;user&quot;:{&quot;email&quot;:&quot;#(userEmail)&quot;,&quot;password&quot;:&quot;#(userPassword)&quot;}}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">54</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method Post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2413</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.5.0.call.0.7">13:09:25.331 request:
-1 &gt; POST https://conduit.productionready.io/api/users/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 67
-1 &gt; Host: conduit.productionready.io
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;user&quot;:{&quot;password&quot;:&quot;karateapi@2021&quot;,&quot;email&quot;:&quot;karatejun@test.com&quot;}}
-
-13:09:26.731 response time in milliseconds: 1397
-1 &lt; 200
-1 &lt; Date: Mon, 21 Jun 2021 03:09:26 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Connection: keep-alive
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; ETag: W/&quot;9add80f4e968f9b2d18cd8bc3076b353&quot;
-1 &lt; Status: 200 OK
-1 &lt; Vary: Origin
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Frame-Options: SAMEORIGIN
-1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 82f0a36d-f1b5-433f-be07-e9496f7e20f8
-1 &lt; X-Runtime: 0.082195
-1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; cf-request-id: 0ace246abc000019b9493dc000000001
-1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=SZZcX2DABlqhE3GfhqTxBvbrunc4ZFzvInQEa80eWnySPmjo31sFGN8wi3LXLg4hQmDTovhSc83ZJdCqUWRQIBkRJv3sUoYHRcTIF3XpLBxTzIO%2FYNtp%2FeJQof7xykfqWTJHqPUDXMY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 662a09bdfd3719b9-SIN
-1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
-{&quot;user&quot;:{&quot;createdAt&quot;:&quot;2021-06-04T05:15:38.315Z&quot;,&quot;image&quot;:null,&quot;bio&quot;:null,&quot;id&quot;:173662,&quot;email&quot;:&quot;karatejun@test.com&quot;,&quot;updatedAt&quot;:&quot;2021-06-04T05:15:38.320Z&quot;,&quot;username&quot;:&quot;KarateAPIAutomation&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg&quot;}}
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = response.user.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">8</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.45">
-      <div class="step-ref passed">45</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0 }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.46">
-      <div class="step-ref passed">46</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.47">
-      <div class="step-ref passed">47</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method Get</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1713</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.47">13:09:26.799 request:
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>13:09:26.799 request:
 1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
 1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg
 1 &gt; Host: conduit.productionready.io
@@ -429,245 +330,288 @@
 1 &lt; CF-RAY: 662a09c59fe8de01-SIN
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-bl5tw2&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:35.094Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;test-title-ldn66s&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:35.094Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:24.070Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-jf0u7p&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:24.070Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:02:39.216Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;test-title-rfz0pv&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:02:39.216Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:01:18.415Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;test-title-chqa73&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:01:18.415Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:55:15.550Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-wl3cvg&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:55:15.550Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:53:04.517Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-u975bg&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:53:04.517Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:50:45.161Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/sm.ign.com\/ign_pt\/screenshot\/default\/1-wzz9owp3qjjcswtititjkw_6g31.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:&quot;Nothing&quot;,&quot;username&quot;:&quot;nitaicharan&quot;},&quot;description&quot;:&quot;about&quot;,&quot;title&quot;:&quot;Teste&quot;,&quot;body&quot;:&quot;markdown&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;teste-uqsmrw&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:50:45.161Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:34:02.116Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-ux3ovq&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:34:02.116Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:33:39.641Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-avd589&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:33:39.641Z&quot;,&quot;favorited&quot;:false}]}
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.48">
-      <div class="step-ref passed">48</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+</pre>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
   </div>
 
-   
-  
-  
 
-  
 
-     
 
-  
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def favoritesCount = response.articles[0].favoritesCount</span>
+
+  <span class="lead-duration duration">0.016</span>
+
 </div>
-          <div><div>
-  
 
-  
 
-  <div class="step-row">
-    <div class="step-container" id="0.49">
-      <div class="step-ref passed">49</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def favoritesCount = response.articles[0].favoritesCount</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def article = response.articles[0]</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favoritesCount</span>
+
+  <span class="lead-duration duration">1.286</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">helpers/AddLikes.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>{
+  &quot;tagList&quot;: [
+  ],
+  &quot;createdAt&quot;: &quot;2021-06-21T03:03:45.956Z&quot;,
+  &quot;author&quot;: {
+    &quot;image&quot;: &quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,
+    &quot;following&quot;: false,
+    &quot;bio&quot;: null,
+    &quot;username&quot;: &quot;mrahman&quot;
+  },
+  &quot;description&quot;: &quot;This is a description&quot;,
+  &quot;title&quot;: &quot;This is a title&quot;,
+  &quot;body&quot;: &quot;This is a body of the Article&quot;,
+  &quot;favoritesCount&quot;: 0,
+  &quot;slug&quot;: &quot;this-is-a-title-bl5tw2&quot;,
+  &quot;updatedAt&quot;: &quot;2021-06-21T03:03:45.956Z&quot;,
+  &quot;favorited&quot;: false
+}
+</pre>
       </div>
     </div>
-    <div class="time-cell passed">16</div>
   </div>
 
-   
-  
-  
 
-  
 
-     
 
-  
 
-</div>
-</div>
-          <div><div>
-  
 
-  
 
-  <div class="step-row">
-    <div class="step-container" id="0.50">
-      <div class="step-ref passed">50</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def article = response.articles[0]</span>
       </div>
-    </div>
-    <div class="time-cell passed">9</div>
-  </div>
+      <div class="step">
 
-   
-  
-  
 
-  
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
 
-     
-
-  
+  <span class="lead-duration duration">0.000</span>
 
 </div>
-</div>
-          <div><div>
-  
 
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># * if (favoritesCount == 0) karate.call(&#39;classpath:helpers/AddLikes.feature&#39;, article)</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
 
-  <div class="step-row">
-    <div class="step-container" id="0.54">
-      <div class="step-ref passed">54</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def result = favoritesCount == 0 ? karate.call(&#39;classpath:helpers/AddLikes.feature&#39;, article).likesCount : favoritesCount</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </div>
-    <div class="time-cell passed">1287</div>
-  </div>
+      <div class="step">
 
-   
-  
-  
 
-  
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'articles' ,slug, 'favorite'</span>
 
-     
+  <span class="lead-duration duration">0.011</span>
 
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.54.0.call">
-        <div class="step-ref passed">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">helpers.AddLikes</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div class="time-cell passed">1232</div>
-    </div>
-    <div>
-      <div><div>
-  
+      <div class="step">
 
-  
 
-  <div class="step-row" data-parent="0.54.0.call">
-    <div class="step-container" id="0.54.0.call.0.5">
-      <div class="step-ref passed">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url apiUrl</span>
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
+      <div class="step">
 
-   
-  
-  
 
-  
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method Post</span>
 
-     
-
-  
+  <span class="lead-duration duration">1.217</span>
 
 </div>
-</div>
-      <div><div>
-  
 
-  
 
-  <div class="step-row" data-parent="0.54.0.call">
-    <div class="step-container" id="0.54.0.call.0.8">
-      <div class="step-ref passed">8</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;articles&#39; ,slug, &#39;favorite&#39;</span>
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
       </div>
-    </div>
-    <div class="time-cell passed">12</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.54.0.call">
-    <div class="step-container" id="0.54.0.call.0.9">
-      <div class="step-ref passed">9</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.54.0.call">
-    <div class="step-container" id="0.54.0.call.0.10">
-      <div class="step-ref passed">10</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method Post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1218</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.54.0.call.0.10">13:09:28.572 request:
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>13:09:28.572 request:
 1 &gt; POST https://conduit.productionready.io/api/articles/this-is-a-title-bl5tw2/favorite
 1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -703,152 +647,152 @@
 1 &lt; CF-RAY: 662a09d119b81a15-SIN
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;article&quot;:{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;this-is-a-title-bl5tw2&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;favorited&quot;:true}}
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.54.0.call">
-    <div class="step-container" id="0.54.0.call.0.11">
-      <div class="step-ref passed">11</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+</pre>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
   </div>
 
-   
-  
-  
 
-  
 
-     
 
-  
 
-</div>
-</div>
-      <div><div>
-  
 
-  
 
-  <div class="step-row" data-parent="0.54.0.call">
-    <div class="step-container" id="0.54.0.call.0.12">
-      <div class="step-ref passed">12</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def likesCount = response.article.favoritesCount</span>
       </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
+      <div class="step">
 
-   
-  
-  
 
-  
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
 
-     
-
-  
+  <span class="lead-duration duration">0.000</span>
 
 </div>
-</div>
-    </div>    
-  </div>
 
-</div>
-</div>
-          <div><div>
-  
 
-  
 
-  <div class="step-row">
-    <div class="step-container" id="0.56">
-      <div class="step-ref passed">56</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0 }</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
+      <div class="step">
 
-   
-  
-  
 
-  
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def likesCount = response.article.favoritesCount</span>
 
-     
-
-  
+  <span class="lead-duration duration">0.001</span>
 
 </div>
-</div>
-          <div><div>
-  
 
-  
 
-  <div class="step-row">
-    <div class="step-container" id="0.57">
-      <div class="step-ref passed">57</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
+      <div class="step">
 
-   
-  
-  
 
-  
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { limit: 10, offset: 0 }</span>
 
-     
-
-  
+  <span class="lead-duration duration">0.000</span>
 
 </div>
-</div>
-          <div><div>
-  
 
-  
 
-  <div class="step-row">
-    <div class="step-container" id="0.58">
-      <div class="step-ref passed">58</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method Get</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </div>
-    <div class="time-cell passed">2248</div>
-  </div>
+      <div class="step">
 
-   
-  
-  
 
-  
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
 
-  <div class="preformatted" data-parent="0.58">13:09:29.794 request:
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">2.248</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>13:09:29.794 request:
 2 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
 2 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg
 2 &gt; Host: conduit.productionready.io
@@ -882,71 +826,114 @@
 2 &lt; CF-RAY: 662a09d82e3319fd-SIN
 2 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;this-is-a-title-bl5tw2&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:24.070Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-jf0u7p&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:24.070Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:02:39.216Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;test-title-rfz0pv&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:02:39.216Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:01:18.415Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;test-title-chqa73&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:01:18.415Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:55:15.550Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-wl3cvg&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:55:15.550Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:53:04.517Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-u975bg&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:53:04.517Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:50:45.161Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/sm.ign.com\/ign_pt\/screenshot\/default\/1-wzz9owp3qjjcswtititjkw_6g31.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:&quot;Nothing&quot;,&quot;username&quot;:&quot;nitaicharan&quot;},&quot;description&quot;:&quot;about&quot;,&quot;title&quot;:&quot;Teste&quot;,&quot;body&quot;:&quot;markdown&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;teste-uqsmrw&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:50:45.161Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:34:02.116Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-ux3ovq&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:34:02.116Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:33:39.641Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-avd589&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:33:39.641Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:33:21.229Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-nzoaz9&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:33:21.229Z&quot;,&quot;favorited&quot;:false}]}
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.59">
-      <div class="step-ref passed">59</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+</pre>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
   </div>
 
-   
-  
-  
 
-  
 
-     
 
-  
 
-</div>
-</div>
-          <div><div>
-  
 
-  
 
-  <div class="step-row">
-    <div class="step-container" id="0.60">
-      <div class="step-ref passed">60</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.articles[0].favoritesCount == result</span>
       </div>
-    </div>
-    <div class="time-cell passed">17</div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.articles[0].favoritesCount == result</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
   </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
 </div>
+
+
+
+
+
+  </div>
 </div>
-        </div>
+
+
       </div>
     </div>
-  </body>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
 </html>
-
