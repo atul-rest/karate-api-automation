@@ -1,8 +1,8 @@
-13:09:21.152 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
-13:09:22.558 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-13:09:24.110 [main] INFO  com.intuit.karate - karate.env system property was: null 
-13:09:24.132 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
-13:09:25.316 [main] DEBUG com.intuit.karate - request:
+09:52:17.464 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@ignore
+09:52:19.282 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:52:21.433 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:21.449 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+09:52:23.287 [main] DEBUG com.intuit.karate - request:
 1 > POST https://conduit.productionready.io/api/users/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 67
@@ -12,68 +12,316 @@
 1 > Accept-Encoding: gzip,deflate
 {"user":{"password":"karateapi@2021","email":"karatejun@test.com"}}
 
-13:09:26.731 [main] DEBUG com.intuit.karate - response time in milliseconds: 1397
+09:52:24.822 [main] DEBUG com.intuit.karate - response time in milliseconds: 1531
 1 < 200
-1 < Date: Mon, 21 Jun 2021 03:09:26 GMT
+1 < Date: Mon, 21 Jun 2021 23:52:24 GMT
 1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
 1 < Cache-Control: max-age=0, private, must-revalidate
-1 < ETag: W/"9add80f4e968f9b2d18cd8bc3076b353"
+1 < ETag: W/"2449dee56693dccc97114bea6bdde211"
 1 < Status: 200 OK
 1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: 82f0a36d-f1b5-433f-be07-e9496f7e20f8
-1 < X-Runtime: 0.082195
+1 < X-Request-Id: d158f49f-58cf-4ed3-903d-11c54d55a9d2
+1 < X-Runtime: 0.082166
 1 < X-XSS-Protection: 1; mode=block
 1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ace246abc000019b9493dc000000001
+1 < cf-request-id: 0ad29663280000ddcf1324e000000001
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=SZZcX2DABlqhE3GfhqTxBvbrunc4ZFzvInQEa80eWnySPmjo31sFGN8wi3LXLg4hQmDTovhSc83ZJdCqUWRQIBkRJv3sUoYHRcTIF3XpLBxTzIO%2FYNtp%2FeJQof7xykfqWTJHqPUDXMY%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=f4RUiyB8gOUVgh5qLjweYe7qaWf02lbFTQ9VgcdcDqPe%2FxE7Z7r0SP3b%2Fyx2SUi%2BD7HKsN3kPZasZR%2BfbQEYM8pgrxfNJ1GuYL0GSdvour0Qx94c%2BdsFyoGJAR840f4CRKtOXBGEQvU%3D"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 662a09bdfd3719b9-SIN
+1 < CF-RAY: 6631267ea8a7ddcf-SIN
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"user":{"createdAt":"2021-06-04T05:15:38.315Z","image":null,"bio":null,"id":173662,"email":"karatejun@test.com","updatedAt":"2021-06-04T05:15:38.320Z","username":"KarateAPIAutomation","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg"}}
-13:09:26.744 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
-13:09:26.799 [main] DEBUG com.intuit.karate - request:
-1 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
-1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg
+{"user":{"createdAt":"2021-06-04T05:15:38.315Z","image":null,"bio":null,"id":173662,"email":"karatejun@test.com","updatedAt":"2021-06-04T05:15:38.320Z","username":"KarateAPIAutomation","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8"}}
+09:52:24.840 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+09:52:25.357 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/articles
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 107
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"tagList":[],"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear."}}
+
+09:52:26.340 [main] DEBUG com.intuit.karate - response time in milliseconds: 983
+1 < 200
+1 < Date: Mon, 21 Jun 2021 23:52:26 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < ETag: W/"e99cad27427b18dc947cf9be932a439e"
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: d56a0517-b9a7-43f3-a041-cb209a9ec92a
+1 < X-Runtime: 0.075550
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad29669a200002e9e76bba000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=WVV96D8o707vScH63Q06ALayoz0XGR83pNmsUpko3PLcitcHNTvyb3636OC7Fuq1LLn9khfLK2zWrA3qvR%2Fh6hwPU5mNTfgH00bdCyBQelyaozmYqdWHBSj%2Ft4MrK8T%2Bae5w3VgdiSM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663126890e012e9e-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"article":{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":0,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":false}}
+09:52:26.387 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:26.479 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/articles
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 143
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"tagList":[],"description":"Elyria","title":"Osney Kettleblack","body":"A lion doesn't concern itself with the opinion of sheep."}}
+
+09:52:27.442 [main] DEBUG com.intuit.karate - response time in milliseconds: 956
+1 < 200
+1 < Date: Mon, 21 Jun 2021 23:52:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < ETag: W/"5f11b2a057b1e05e8b54c856b41d6e1e"
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 898df30d-060f-4c65-b445-df93e5cea89b
+1 < X-Runtime: 0.081073
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad2966e0a000056073c9da000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=%2Bppz2wwMBJI%2BWbYvKsLjfv034%2BEvXS4gUyDmtlPfVrYtBr8%2FQe4tuBhGGgZH2IRPWGPMPnmvYwZT4QrU1GlnnQXSMP%2BOPJ6UVnWxAb9rJyY61U%2BiMyb6yCwN5daBXdhWuxhu9bw3tas%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663126900c675607-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"article":{"tagList":[],"createdAt":"2021-06-21T23:52:27.255Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Elyria","title":"Osney Kettleblack","body":"A lion doesn't concern itself with the opinion of sheep.","favoritesCount":0,"slug":"osney-kettleblack-zep1jr","updatedAt":"2021-06-21T23:52:27.255Z","favorited":false}}
+09:52:27.479 [main] DEBUG com.intuit.karate - request:
+2 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
+2 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+2 > Host: conduit.productionready.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:52:29.006 [main] DEBUG com.intuit.karate - response time in milliseconds: 1523
+2 < 200
+2 < Date: Mon, 21 Jun 2021 23:52:28 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cache-Control: max-age=0, private, must-revalidate
+2 < ETag: W/"c75bc7b7a7257e31969339e4e4e74903"
+2 < Status: 200 OK
+2 < Vary: Origin
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Powered-By: Phusion Passenger 4.0.60
+2 < X-Request-Id: 149d0e4b-35f4-4507-b8ca-099a813dd40e
+2 < X-Runtime: 0.611704
+2 < X-XSS-Protection: 1; mode=block
+2 < CF-Cache-Status: DYNAMIC
+2 < cf-request-id: 0ad296720900001a9c07263000000001
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=oIq0Qe1XDm7VSPxWa4Smmorim6kEdeQ645L3bngtQF1hNopkQuRCio0afXK%2B08iaUQ0OQ3WLsSVDWITYimDgnHWtEe3AuhdNGJTtgnNbYYUcs38sTSG5IzTiEffvWvGNEU8OfQoRnPY%3D"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 663126967cda1a9c-SIN
+2 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:27.255Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Elyria","title":"Osney Kettleblack","body":"A lion doesn't concern itself with the opinion of sheep.","favoritesCount":0,"slug":"osney-kettleblack-zep1jr","updatedAt":"2021-06-21T23:52:27.255Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":0,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T23:09:46.103Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-hmvurd","updatedAt":"2021-06-21T23:09:46.103Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:52:38.701Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-nk9eos","updatedAt":"2021-06-21T22:52:38.701Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:47.818Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"Joose"},"description":"Carros","title":"Carros","body":"Fusca","favoritesCount":0,"slug":"carros-jz1mqr","updatedAt":"2021-06-21T22:48:47.818Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:46.085Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"atas","title":"testasrfat","body":"atasd","favoritesCount":0,"slug":"testasrfat-z4j6sd","updatedAt":"2021-06-21T22:48:46.085Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:45:30.302Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"@@tester"},"description":"testing this app","title":"testing","body":"this is a test","favoritesCount":0,"slug":"testing-nq00b1","updatedAt":"2021-06-21T22:45:30.302Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:31:33.692Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"Sunspear","title":"Wilbert","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","favoritesCount":1,"slug":"wilbert-fic14e","updatedAt":"2021-06-21T22:31:33.692Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:57:00.090Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"White Harbor","title":"Jyanna Frey","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","favoritesCount":0,"slug":"jyanna-frey-mwqm9c","updatedAt":"2021-06-21T21:57:00.090Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:42:40.369Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-yfrxe1","updatedAt":"2021-06-21T21:42:40.369Z","favorited":false}]}
+09:52:29.022 [main] DEBUG com.intuit.karate - request:
+3 > DELETE https://conduit.productionready.io/api/articles/osney-kettleblack-zep1jr
+3 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+3 > Accept-Encoding: gzip,deflate
+
+
+09:52:30.027 [main] DEBUG com.intuit.karate - response time in milliseconds: 1004
+3 < 200
+3 < Date: Mon, 21 Jun 2021 23:52:29 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < Cache-Control: max-age=0, private, must-revalidate
+3 < ETag: W/"99914b932bd37a50b983c5e7c90ae93b"
+3 < Status: 200 OK
+3 < Vary: Origin
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: SAMEORIGIN
+3 < X-Powered-By: Phusion Passenger 4.0.60
+3 < X-Request-Id: 9e75b88f-e795-458b-9830-61279a5a3cc5
+3 < X-Runtime: 0.057248
+3 < X-XSS-Protection: 1; mode=block
+3 < CF-Cache-Status: DYNAMIC
+3 < cf-request-id: 0ad296780a0000565e363e3000000001
+3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=L%2BAcuGewUZJFkk8fX9bUDXELaTRKwSnLdAsw97nwQ3zNZTEBSibKlZH3nAUWugBwYTAobmeTrD%2FcW7dANzi1rYmEnurWQckf4D93Cha9FPK19RD46NjZ6UcpXEWLV8EEpSAnrG8tfdA%3D"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 663126a00d5e565e-SIN
+3 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{}
+09:52:30.032 [main] DEBUG com.intuit.karate - request:
+4 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
+4 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+4 > Host: conduit.productionready.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+4 > Accept-Encoding: gzip,deflate
+
+
+09:52:31.667 [main] DEBUG com.intuit.karate - response time in milliseconds: 1633
+4 < 200
+4 < Date: Mon, 21 Jun 2021 23:52:31 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < Cache-Control: max-age=0, private, must-revalidate
+4 < ETag: W/"97b36c98e0f0edaa09e6049420341182"
+4 < Status: 200 OK
+4 < Vary: Origin
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: SAMEORIGIN
+4 < X-Powered-By: Phusion Passenger 4.0.60
+4 < X-Request-Id: 97c588f1-547b-4e6d-b5f6-47f970f58e1a
+4 < X-Runtime: 0.625954
+4 < X-XSS-Protection: 1; mode=block
+4 < CF-Cache-Status: DYNAMIC
+4 < cf-request-id: 0ad2967c0900001a36442d0000000001
+4 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=Hi9A56T0zxgVPiNLnLFW3Hq8FbL7F3WeV0FlV98Rf7y%2FUB6gsixMZAZz7SrPof3MQOMv2dAyaVfAou0FmQ4ViBQgwFQ3dB61vRX%2FyfRGxfrCh57Hd7IUo5w3%2FB4Zm3lkjWmrgZ0d%2Bzw%3D"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 663126a67b461a36-SIN
+4 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":0,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T23:09:46.103Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-hmvurd","updatedAt":"2021-06-21T23:09:46.103Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:52:38.701Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-nk9eos","updatedAt":"2021-06-21T22:52:38.701Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:47.818Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"Joose"},"description":"Carros","title":"Carros","body":"Fusca","favoritesCount":0,"slug":"carros-jz1mqr","updatedAt":"2021-06-21T22:48:47.818Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:46.085Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"atas","title":"testasrfat","body":"atasd","favoritesCount":0,"slug":"testasrfat-z4j6sd","updatedAt":"2021-06-21T22:48:46.085Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:45:30.302Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"@@tester"},"description":"testing this app","title":"testing","body":"this is a test","favoritesCount":0,"slug":"testing-nq00b1","updatedAt":"2021-06-21T22:45:30.302Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:31:33.692Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"Sunspear","title":"Wilbert","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","favoritesCount":1,"slug":"wilbert-fic14e","updatedAt":"2021-06-21T22:31:33.692Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:57:00.090Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"White Harbor","title":"Jyanna Frey","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","favoritesCount":0,"slug":"jyanna-frey-mwqm9c","updatedAt":"2021-06-21T21:57:00.090Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:42:40.369Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-yfrxe1","updatedAt":"2021-06-21T21:42:40.369Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:41:09.776Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-wda0o5","updatedAt":"2021-06-21T21:41:09.776Z","favorited":false}]}
+09:52:33.791 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (0 remaining) classpath:ConduitApp/feature/Articles.feature
+09:52:33.836 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:33.854 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/tags
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
 1 > Host: conduit.productionready.io
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
 1 > Accept-Encoding: gzip,deflate
 
 
-13:09:28.468 [main] DEBUG com.intuit.karate - response time in milliseconds: 1663
+09:52:35.857 [main] DEBUG com.intuit.karate - response time in milliseconds: 2001
 1 < 200
-1 < Date: Mon, 21 Jun 2021 03:09:28 GMT
+1 < Date: Mon, 21 Jun 2021 23:52:35 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
 1 < Cache-Control: max-age=0, private, must-revalidate
-1 < ETag: W/"57c649c6dd9df4f5956d3ac8636b8bcf"
+1 < ETag: W/"d9239a2dcddfb75776bbfee74fbb1e42"
 1 < Status: 200 OK
 1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: 868d0870-3aad-4ece-94bc-e4fbd15da6f8
-1 < X-Runtime: 0.618611
+1 < X-Request-Id: 39cb39c1-51e9-489a-98fb-2cd887e22275
+1 < X-Runtime: 1.099101
 1 < X-XSS-Protection: 1; mode=block
 1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ace246f7f0000de01e53d5000000001
+1 < cf-request-id: 0ad2968ad50000568e10244000000001
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=l9AOv6TtDIBNyVmLaXlKCOvAgFS84zXt3u7g9Ff2FiXIHj2tX%2F23YsoSj6P8j2yUqqSFR7NC6wGzQmg9KrcOi%2FuUSgf9Agel4wr7ro1s7O2nw4sxxZNxA5ex9CVKOKihJyq9b%2FdyFmc%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=OHTpFTA8B%2BAq3vGnckRkhm2nVNAKcgquUj2Fe7LqFjXGgNUh%2BEMyeYJ%2F398ikwD0dnAfi8ilzekh2YgmNYvYeynROWuMeodxEncux4iJlojqP68WcRTo7YJMQETRfSs%2BoZgfPjlbrHc%3D"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 662a09c59fe8de01-SIN
+1 < CF-RAY: 663126be2ec7568e-SIN
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T03:03:45.956Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-bl5tw2","updatedAt":"2021-06-21T03:03:45.956Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T03:03:35.094Z","author":{"image":"","following":false,"bio":null,"username":"rajeshkumarseal"},"description":"Test 1","title":"Test Title","body":"Test 2","favoritesCount":0,"slug":"test-title-ldn66s","updatedAt":"2021-06-21T03:03:35.094Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T03:03:24.070Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-jf0u7p","updatedAt":"2021-06-21T03:03:24.070Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T03:02:39.216Z","author":{"image":"","following":false,"bio":null,"username":"rajeshkumarseal"},"description":"Test 1","title":"Test Title","body":"Test 2","favoritesCount":1,"slug":"test-title-rfz0pv","updatedAt":"2021-06-21T03:02:39.216Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T03:01:18.415Z","author":{"image":"","following":false,"bio":null,"username":"rajeshkumarseal"},"description":"Test 1","title":"Test Title","body":"Test 2","favoritesCount":1,"slug":"test-title-chqa73","updatedAt":"2021-06-21T03:01:18.415Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T02:55:15.550Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-wl3cvg","updatedAt":"2021-06-21T02:55:15.550Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T02:53:04.517Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-u975bg","updatedAt":"2021-06-21T02:53:04.517Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T02:50:45.161Z","author":{"image":"https:\/\/sm.ign.com\/ign_pt\/screenshot\/default\/1-wzz9owp3qjjcswtititjkw_6g31.jpg","following":false,"bio":"Nothing","username":"nitaicharan"},"description":"about","title":"Teste","body":"markdown","favoritesCount":0,"slug":"teste-uqsmrw","updatedAt":"2021-06-21T02:50:45.161Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T02:34:02.116Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-ux3ovq","updatedAt":"2021-06-21T02:34:02.116Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T02:33:39.641Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-avd589","updatedAt":"2021-06-21T02:33:39.641Z","favorited":false}]}
-13:09:28.571 [main] DEBUG com.intuit.karate - request:
-1 > POST https://conduit.productionready.io/api/articles/this-is-a-title-bl5tw2/favorite
-1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg
+{"tags":["\u200C","\u200C\u200C","\u200C\u200C\u200C","\u200C\u200C\u200C\u200C","\u200C\u200C\u200C\u200C\u200C","\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C","\u200C\u200C\u200C\u200C\u200C\u200C\u200C","\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C","\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C","\u200C\u200C\u200C\u200C\u200C\u200C","HuManIty","Hu\u200CMan\u200CIty","Gandhi","HITLER","SIDA","BlackLivesMatter","Black\u200CLives\u200CMatter","test","dragons","butt"]}
+09:52:35.884 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:35.920 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:52:38.323 [main] DEBUG com.intuit.karate - response time in milliseconds: 2400
+1 < 200
+1 < Date: Mon, 21 Jun 2021 23:52:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < ETag: W/"97b36c98e0f0edaa09e6049420341182"
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 1e9f2787-fdb0-420a-9f86-9c0bac92620b
+1 < X-Runtime: 0.609798
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad29696070000173c12362000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=4xqcLdheK42Y8UofpCJApXS1fF2eSQX1iYA27SRwcEurvBdH5ohbAobTsu9LT73TTv9Ql1MJgYMaNDnniOaHun2tK%2F2Lg6YPnOk3XHSWoGMTF3DUBcv7JWu%2F2G7jS6GL%2FZwbzgkpgRA%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663126d00982173c-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":0,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T23:09:46.103Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-hmvurd","updatedAt":"2021-06-21T23:09:46.103Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:52:38.701Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-nk9eos","updatedAt":"2021-06-21T22:52:38.701Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:47.818Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"Joose"},"description":"Carros","title":"Carros","body":"Fusca","favoritesCount":0,"slug":"carros-jz1mqr","updatedAt":"2021-06-21T22:48:47.818Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:46.085Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"atas","title":"testasrfat","body":"atasd","favoritesCount":0,"slug":"testasrfat-z4j6sd","updatedAt":"2021-06-21T22:48:46.085Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:45:30.302Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"@@tester"},"description":"testing this app","title":"testing","body":"this is a test","favoritesCount":0,"slug":"testing-nq00b1","updatedAt":"2021-06-21T22:45:30.302Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:31:33.692Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"Sunspear","title":"Wilbert","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","favoritesCount":1,"slug":"wilbert-fic14e","updatedAt":"2021-06-21T22:31:33.692Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:57:00.090Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"White Harbor","title":"Jyanna Frey","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","favoritesCount":0,"slug":"jyanna-frey-mwqm9c","updatedAt":"2021-06-21T21:57:00.090Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:42:40.369Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-yfrxe1","updatedAt":"2021-06-21T21:42:40.369Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:41:09.776Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-wda0o5","updatedAt":"2021-06-21T21:41:09.776Z","favorited":false}]}
+09:52:38.449 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:38.460 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:52:39.958 [main] DEBUG com.intuit.karate - response time in milliseconds: 1495
+1 < 200
+1 < Date: Mon, 21 Jun 2021 23:52:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < ETag: W/"97b36c98e0f0edaa09e6049420341182"
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 59928c83-235f-43eb-906c-66e03f352740
+1 < X-Runtime: 0.610664
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad2969c95000001a74d2a3000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=gXgbvTQmQyNywhNEOQUFa0FnN3H9m%2BsJhJF%2FRZQxXYWJFD6Wo%2BdaTSXEwBJ4GmXqrOvscMJ1qhfhbJ3j08Bw5CX1w9j1iAbWkPvzoXV3unuqgTw4JbXSiZrXbRmsuEKZm0upSSu%2BZYc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663126da884701a7-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":0,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T23:09:46.103Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-hmvurd","updatedAt":"2021-06-21T23:09:46.103Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:52:38.701Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-nk9eos","updatedAt":"2021-06-21T22:52:38.701Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:47.818Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"Joose"},"description":"Carros","title":"Carros","body":"Fusca","favoritesCount":0,"slug":"carros-jz1mqr","updatedAt":"2021-06-21T22:48:47.818Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:46.085Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"atas","title":"testasrfat","body":"atasd","favoritesCount":0,"slug":"testasrfat-z4j6sd","updatedAt":"2021-06-21T22:48:46.085Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:45:30.302Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"@@tester"},"description":"testing this app","title":"testing","body":"this is a test","favoritesCount":0,"slug":"testing-nq00b1","updatedAt":"2021-06-21T22:45:30.302Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:31:33.692Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"Sunspear","title":"Wilbert","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","favoritesCount":1,"slug":"wilbert-fic14e","updatedAt":"2021-06-21T22:31:33.692Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:57:00.090Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"White Harbor","title":"Jyanna Frey","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","favoritesCount":0,"slug":"jyanna-frey-mwqm9c","updatedAt":"2021-06-21T21:57:00.090Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:42:40.369Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-yfrxe1","updatedAt":"2021-06-21T21:42:40.369Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:41:09.776Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-wda0o5","updatedAt":"2021-06-21T21:41:09.776Z","favorited":false}]}
+09:52:39.984 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/articles/roro-uhoris-u909pp/favorite
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 2
 1 > Host: conduit.productionready.io
@@ -82,64 +330,790 @@
 1 > Accept-Encoding: gzip,deflate
 {}
 
-13:09:29.784 [main] DEBUG com.intuit.karate - response time in milliseconds: 1212
+09:52:40.982 [main] DEBUG com.intuit.karate - response time in milliseconds: 998
 1 < 200
-1 < Date: Mon, 21 Jun 2021 03:09:29 GMT
+1 < Date: Mon, 21 Jun 2021 23:52:40 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
 1 < Cache-Control: max-age=0, private, must-revalidate
-1 < ETag: W/"61c2e5415ff3444cd2852e8c92c6f984"
+1 < ETag: W/"da73c9757ca894d74b44d46042c7beef"
 1 < Status: 200 OK
 1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: 624cc620-6b03-4aa6-9af8-772dca18a39d
-1 < X-Runtime: 0.066251
+1 < X-Request-Id: 0dd7e9a5-591c-4ecf-998f-f7b07f5dd518
+1 < X-Runtime: 0.076174
 1 < X-XSS-Protection: 1; mode=block
 1 < CF-Cache-Status: DYNAMIC
-1 < cf-request-id: 0ace2476b300001a15f71ce000000001
+1 < cf-request-id: 0ad296a27f00002f7390b47000000001
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=JrwztCtFTG3RQCcoIgQi4T5SSUM04lk24yWfk7x2SzDoYipmdX5hKJ55PzRn4rDQwSlLBanZ8U5HM%2B%2BjqCPizvu4LSUe%2Fatl5wR4byFjswN4Caucqy%2BFCPG%2B%2FwRVO7NovRVGIOdw7w8%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=Y2PsDfQn0MYd%2FLZdjLlYEFsKEug1vByz4VAmZYxgNvox4DXUWiDEk3CNb%2Fteg9juaEgH2W%2FNuH4JE6EwE71pZxoL5%2Fny%2FleloqsRBPNMD2wLBFux3vyTNpRiwX%2FgbN0wAQy7jlV7Kdg%3D"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 662a09d119b81a15-SIN
+1 < CF-RAY: 663126e3f84a2f73-SIN
 1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"article":{"tagList":[],"createdAt":"2021-06-21T03:03:45.956Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":1,"slug":"this-is-a-title-bl5tw2","updatedAt":"2021-06-21T03:03:45.956Z","favorited":true}}
-13:09:29.794 [main] DEBUG com.intuit.karate - request:
+{"article":{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":1,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":true}}
+09:52:40.987 [main] DEBUG com.intuit.karate - request:
 2 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
-2 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg
+2 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
 2 > Host: conduit.productionready.io
 2 > Connection: Keep-Alive
 2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
 2 > Accept-Encoding: gzip,deflate
 
 
-13:09:32.038 [main] DEBUG com.intuit.karate - response time in milliseconds: 2242
+09:52:42.946 [main] DEBUG com.intuit.karate - response time in milliseconds: 1957
 2 < 200
-2 < Date: Mon, 21 Jun 2021 03:09:31 GMT
+2 < Date: Mon, 21 Jun 2021 23:52:42 GMT
 2 < Content-Type: application/json; charset=utf-8
 2 < Transfer-Encoding: chunked
 2 < Connection: keep-alive
 2 < Cache-Control: max-age=0, private, must-revalidate
-2 < ETag: W/"ecda273f0644dafac2ce53597ffafe99"
+2 < ETag: W/"da6390184d83f6c7c03cf20c6d838abd"
 2 < Status: 200 OK
 2 < Vary: Origin
 2 < X-Content-Type-Options: nosniff
 2 < X-Frame-Options: SAMEORIGIN
 2 < X-Powered-By: Phusion Passenger 4.0.60
-2 < X-Request-Id: e4158509-b2c2-4e1d-a6d1-1e6a06c1a6cc
-2 < X-Runtime: 1.300988
+2 < X-Request-Id: eeb5c37a-0e04-4d96-ae74-f0db44478af2
+2 < X-Runtime: 1.004649
 2 < X-XSS-Protection: 1; mode=block
 2 < CF-Cache-Status: DYNAMIC
-2 < cf-request-id: 0ace247b1b000019fde83a7000000001
+2 < cf-request-id: 0ad296a6d40000565fb2303000000001
 2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=pdxnkla6B5GUjrAxOG50NqlTDYau%2BNluFpFTM7gg6SJfRp%2B%2FCytSWsQi%2FocUsAcN%2FOdC%2FSzjAx%2FBKfgX2RZBKTtUj9NQz1PoUCp%2BVPUyjB0uDnimcofBq4EwnhTHIkwYEsekKbyQC4A%3D"}],"group":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=h72vWK0uT1LdlZhoSba4XVSIMa4Iy8OyCZ0oQq0BBT1l9VYojYVh824G%2FUbqG4FPaal8ok9pmBhhXQFeZc0r5pfsShWvmJimarlFbo4gblZfXLfws5exJDeAmaA0ARosN%2FNBopjaVw0%3D"}],"group":"cf-nel","max_age":604800}
 2 < NEL: {"report_to":"cf-nel","max_age":604800}
 2 < Server: cloudflare
-2 < CF-RAY: 662a09d82e3319fd-SIN
+2 < CF-RAY: 663126eaef5b565f-SIN
 2 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T03:03:45.956Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":1,"slug":"this-is-a-title-bl5tw2","updatedAt":"2021-06-21T03:03:45.956Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T03:03:24.070Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-jf0u7p","updatedAt":"2021-06-21T03:03:24.070Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T03:02:39.216Z","author":{"image":"","following":false,"bio":null,"username":"rajeshkumarseal"},"description":"Test 1","title":"Test Title","body":"Test 2","favoritesCount":1,"slug":"test-title-rfz0pv","updatedAt":"2021-06-21T03:02:39.216Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T03:01:18.415Z","author":{"image":"","following":false,"bio":null,"username":"rajeshkumarseal"},"description":"Test 1","title":"Test Title","body":"Test 2","favoritesCount":1,"slug":"test-title-chqa73","updatedAt":"2021-06-21T03:01:18.415Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T02:55:15.550Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-wl3cvg","updatedAt":"2021-06-21T02:55:15.550Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T02:53:04.517Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-u975bg","updatedAt":"2021-06-21T02:53:04.517Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T02:50:45.161Z","author":{"image":"https:\/\/sm.ign.com\/ign_pt\/screenshot\/default\/1-wzz9owp3qjjcswtititjkw_6g31.jpg","following":false,"bio":"Nothing","username":"nitaicharan"},"description":"about","title":"Teste","body":"markdown","favoritesCount":0,"slug":"teste-uqsmrw","updatedAt":"2021-06-21T02:50:45.161Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T02:34:02.116Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-ux3ovq","updatedAt":"2021-06-21T02:34:02.116Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T02:33:39.641Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-avd589","updatedAt":"2021-06-21T02:33:39.641Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T02:33:21.229Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":0,"slug":"this-is-a-title-nzoaz9","updatedAt":"2021-06-21T02:33:21.229Z","favorited":false}]}
-13:09:34.226 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (0 remaining) classpath:ConduitApp/feature/HomePage.feature
-13:09:34.335 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":1,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T23:09:46.103Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-hmvurd","updatedAt":"2021-06-21T23:09:46.103Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:52:38.701Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-nk9eos","updatedAt":"2021-06-21T22:52:38.701Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:47.818Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"Joose"},"description":"Carros","title":"Carros","body":"Fusca","favoritesCount":0,"slug":"carros-jz1mqr","updatedAt":"2021-06-21T22:48:47.818Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:46.085Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"atas","title":"testasrfat","body":"atasd","favoritesCount":0,"slug":"testasrfat-z4j6sd","updatedAt":"2021-06-21T22:48:46.085Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:45:30.302Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"@@tester"},"description":"testing this app","title":"testing","body":"this is a test","favoritesCount":0,"slug":"testing-nq00b1","updatedAt":"2021-06-21T22:45:30.302Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:31:33.692Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"Sunspear","title":"Wilbert","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","favoritesCount":1,"slug":"wilbert-fic14e","updatedAt":"2021-06-21T22:31:33.692Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:57:00.090Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"White Harbor","title":"Jyanna Frey","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","favoritesCount":0,"slug":"jyanna-frey-mwqm9c","updatedAt":"2021-06-21T21:57:00.090Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:42:40.369Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-yfrxe1","updatedAt":"2021-06-21T21:42:40.369Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:41:09.776Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-wda0o5","updatedAt":"2021-06-21T21:41:09.776Z","favorited":false}]}
+09:52:42.960 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:42.965 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:52:45.284 [main] DEBUG com.intuit.karate - response time in milliseconds: 2317
+1 < 200
+1 < Date: Mon, 21 Jun 2021 23:52:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < ETag: W/"da6390184d83f6c7c03cf20c6d838abd"
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 2e874348-460c-4909-88f5-3d3388734839
+1 < X-Runtime: 0.861276
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad296adee0000dd0ac01bb000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=qoSMR585SfXI2YiotGC%2FLLe2W6Zg5Z1%2BYSow6x2aDq5BaETPk0Ix5S1Jz%2Bz5T%2FhrvnO7oLZas0EAkKudpqlWQapS3D3sTpdgzDG404efjQB6kYLfI%2F%2FWRA3pje%2FWV1GHaz9vGlyxXgk%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663126f6496add0a-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":1,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T23:09:46.103Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-hmvurd","updatedAt":"2021-06-21T23:09:46.103Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:52:38.701Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-nk9eos","updatedAt":"2021-06-21T22:52:38.701Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:47.818Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"Joose"},"description":"Carros","title":"Carros","body":"Fusca","favoritesCount":0,"slug":"carros-jz1mqr","updatedAt":"2021-06-21T22:48:47.818Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:46.085Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"atas","title":"testasrfat","body":"atasd","favoritesCount":0,"slug":"testasrfat-z4j6sd","updatedAt":"2021-06-21T22:48:46.085Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:45:30.302Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"@@tester"},"description":"testing this app","title":"testing","body":"this is a test","favoritesCount":0,"slug":"testing-nq00b1","updatedAt":"2021-06-21T22:45:30.302Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:31:33.692Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"Sunspear","title":"Wilbert","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","favoritesCount":1,"slug":"wilbert-fic14e","updatedAt":"2021-06-21T22:31:33.692Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:57:00.090Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"White Harbor","title":"Jyanna Frey","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","favoritesCount":0,"slug":"jyanna-frey-mwqm9c","updatedAt":"2021-06-21T21:57:00.090Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:42:40.369Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-yfrxe1","updatedAt":"2021-06-21T21:42:40.369Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:41:09.776Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-wda0o5","updatedAt":"2021-06-21T21:41:09.776Z","favorited":false}]}
+09:52:45.295 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:45.302 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:52:46.922 [main] DEBUG com.intuit.karate - response time in milliseconds: 1619
+1 < 200
+1 < Date: Mon, 21 Jun 2021 23:52:46 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < ETag: W/"da6390184d83f6c7c03cf20c6d838abd"
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: d463a289-b8dd-42a2-b1f7-aac978c0a80c
+1 < X-Runtime: 0.671597
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad296b7a000002e8c7608f000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=vylQzRA7oG9uNraVATS5N2YNcKdtL5LAzXsWLvLwKBq8X1ol4q%2Fugl9S9LK5fhzO631%2FRrK6hTLKELlWjQenmEg5NtuKycQu7%2BCZ02igjmGc6rB454KPgEnk%2FZlJ7Z%2BXk9mG4bcux0Q%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 66312705cb792e8c-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":1,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T23:09:46.103Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-hmvurd","updatedAt":"2021-06-21T23:09:46.103Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:52:38.701Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-nk9eos","updatedAt":"2021-06-21T22:52:38.701Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:47.818Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"Joose"},"description":"Carros","title":"Carros","body":"Fusca","favoritesCount":0,"slug":"carros-jz1mqr","updatedAt":"2021-06-21T22:48:47.818Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:46.085Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"atas","title":"testasrfat","body":"atasd","favoritesCount":0,"slug":"testasrfat-z4j6sd","updatedAt":"2021-06-21T22:48:46.085Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:45:30.302Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"@@tester"},"description":"testing this app","title":"testing","body":"this is a test","favoritesCount":0,"slug":"testing-nq00b1","updatedAt":"2021-06-21T22:45:30.302Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:31:33.692Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"Sunspear","title":"Wilbert","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","favoritesCount":1,"slug":"wilbert-fic14e","updatedAt":"2021-06-21T22:31:33.692Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:57:00.090Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"White Harbor","title":"Jyanna Frey","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","favoritesCount":0,"slug":"jyanna-frey-mwqm9c","updatedAt":"2021-06-21T21:57:00.090Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:42:40.369Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-yfrxe1","updatedAt":"2021-06-21T21:42:40.369Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:41:09.776Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-wda0o5","updatedAt":"2021-06-21T21:41:09.776Z","favorited":false}]}
+09:52:51.957 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:51.973 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:52.405 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (0 remaining) classpath:ConduitApp/feature/HomePage.feature
+09:52:52.414 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:52.489 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:52:54.317 [main] DEBUG com.intuit.karate - response time in milliseconds: 1824
+1 < 200
+1 < Date: Mon, 21 Jun 2021 23:52:54 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < ETag: W/"da6390184d83f6c7c03cf20c6d838abd"
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: b11e650d-fae1-4ec7-bc6c-a0d86d69ff68
+1 < X-Runtime: 0.622649
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad296d4cd0000c39a7c160000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=blC%2BCovOgrBrvV0qokHRlQKKdqh6FD%2Fhs0uJvH%2BzRHl4KIoMuCROVACv%2BZFdwq7uPNOEkZ9lKtmE4MAbsP2nlGCClx8NqB6yOM2r8vyl%2F0no8VbUE2nXYswQ%2Fpl5LSMhsWZbLZfje0A%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663127347890c39a-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":1,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T23:09:46.103Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-hmvurd","updatedAt":"2021-06-21T23:09:46.103Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:52:38.701Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-nk9eos","updatedAt":"2021-06-21T22:52:38.701Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:47.818Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"Joose"},"description":"Carros","title":"Carros","body":"Fusca","favoritesCount":0,"slug":"carros-jz1mqr","updatedAt":"2021-06-21T22:48:47.818Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:46.085Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"atas","title":"testasrfat","body":"atasd","favoritesCount":0,"slug":"testasrfat-z4j6sd","updatedAt":"2021-06-21T22:48:46.085Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:45:30.302Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"@@tester"},"description":"testing this app","title":"testing","body":"this is a test","favoritesCount":0,"slug":"testing-nq00b1","updatedAt":"2021-06-21T22:45:30.302Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:31:33.692Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"Sunspear","title":"Wilbert","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","favoritesCount":1,"slug":"wilbert-fic14e","updatedAt":"2021-06-21T22:31:33.692Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:57:00.090Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"White Harbor","title":"Jyanna Frey","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","favoritesCount":0,"slug":"jyanna-frey-mwqm9c","updatedAt":"2021-06-21T21:57:00.090Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:42:40.369Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-yfrxe1","updatedAt":"2021-06-21T21:42:40.369Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:41:09.776Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-wda0o5","updatedAt":"2021-06-21T21:41:09.776Z","favorited":false}]}
+09:52:54.321 [main] INFO  com.intuit.karate - [print] roro-uhoris-u909pp 
+09:52:54.323 [main] INFO  com.intuit.karate - [print] ==================1 
+09:52:54.326 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit.productionready.io/api/articles/roro-uhoris-u909pp/favorite
+2 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+2 > Host: conduit.productionready.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:52:55.298 [main] DEBUG com.intuit.karate - response time in milliseconds: 972
+2 < 200
+2 < Date: Mon, 21 Jun 2021 23:52:55 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cache-Control: max-age=0, private, must-revalidate
+2 < ETag: W/"da73c9757ca894d74b44d46042c7beef"
+2 < Status: 200 OK
+2 < Vary: Origin
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Powered-By: Phusion Passenger 4.0.60
+2 < X-Request-Id: 30abe2de-564d-40f1-a841-0767de962754
+2 < X-Runtime: 0.060198
+2 < X-XSS-Protection: 1; mode=block
+2 < CF-Cache-Status: DYNAMIC
+2 < cf-request-id: 0ad296dad600000197003ef000000001
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=eLZ217psfFYgsDitwA9NxhSuVKLPib3dCQXxsPCRnD051MWELg0Y4EzfcdUfgj4dKPHnXNjxM2dpHXnlia4s8InnLIEoSPMnasgRlGFWLnrTV8o%2FHM5ymF40dpe6WtmjDfmBM%2FcGU4k%3D"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 6631273e2f3a0197-SIN
+2 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"article":{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":1,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":true}}
+09:52:55.305 [main] DEBUG com.intuit.karate - over-writing existing variable 'response' with new value: {"favoritesCount": 1} //this is new response that we get from above post method
+09:52:55.308 [main] INFO  com.intuit.karate - [print] 1 
+09:52:55.311 [main] DEBUG com.intuit.karate - request:
+3 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10&favorited=KarateAPIAutomation
+3 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+3 > Accept-Encoding: gzip,deflate
+
+
+09:52:56.567 [main] DEBUG com.intuit.karate - response time in milliseconds: 1254
+3 < 200
+3 < Date: Mon, 21 Jun 2021 23:52:56 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < Cache-Control: max-age=0, private, must-revalidate
+3 < ETag: W/"5bf2fa882f56ca3e55f6e8597bab1a54"
+3 < Status: 200 OK
+3 < Vary: Origin
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: SAMEORIGIN
+3 < X-Powered-By: Phusion Passenger 4.0.60
+3 < X-Request-Id: ac57c420-6432-4f3d-9f0b-990f0956fa92
+3 < X-Runtime: 0.080550
+3 < X-XSS-Protection: 1; mode=block
+3 < CF-Cache-Status: DYNAMIC
+3 < cf-request-id: 0ad296dec00000569494346000000001
+3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=SIg8sCmTz%2Bja80LXP2UNR09NxdK7nKnuxn2XOMm7tO1QHSuUyScqtVTy5chZttXwO0VGOxwSPBpkbh5jsHuTenU3Yt85uLuEDv7VQy%2Bvl9lpYBqckY0lB8MZGnRHEY1TdghZmQ1K%2BZ4%3D"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 6631274469e35694-SIN
+3 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"articlesCount":18,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":1,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T03:03:45.956Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":1,"slug":"this-is-a-title-bl5tw2","updatedAt":"2021-06-21T03:03:45.956Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T02:25:57.265Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"mrahman"},"description":"This is a description","title":"This is a title","body":"This is a body of the Article","favoritesCount":1,"slug":"this-is-a-title-xcgnl5","updatedAt":"2021-06-21T02:25:57.265Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T01:33:24.633Z","author":{"image":"https:\/\/s0.lgstatic.com\/i\/image2\/M00\/4C\/0F\/CgoB5lr1Oz-AHjSMAAAz6AzIcOc231.jpg","following":false,"bio":"my bio","username":"xuquantong111"},"description":"bbb","title":"aaaaaaaa","body":"aaaa\nbbbb","favoritesCount":1,"slug":"aaaaaaaa-ca01id","updatedAt":"2021-06-21T01:33:24.633Z","favorited":true},{"tagList":[],"createdAt":"2021-06-18T06:50:16.216Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Braavos","title":"Lucas Codd","body":"Things are not always as they seemed, much that may seem evil can be good.","favoritesCount":1,"slug":"lucas-codd-acbtig","updatedAt":"2021-06-18T06:50:16.216Z","favorited":true},{"tagList":[],"createdAt":"2021-06-18T04:19:29.096Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"hjrodriguez"},"description":"Probando","title":"Probando","body":"Probando aplicación demo... ","favoritesCount":1,"slug":"probando-69rcah","updatedAt":"2021-06-18T04:19:29.096Z","favorited":true},{"tagList":["asasas"],"createdAt":"2021-06-18T03:59:02.067Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"icode"},"description":"asas","title":"aasa","body":"asxas","favoritesCount":1,"slug":"aasa-yddana","updatedAt":"2021-06-18T03:59:02.067Z","favorited":true},{"tagList":[],"createdAt":"2021-06-18T03:33:45.216Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Oros","title":"Hugh Hammer","body":"Fear cuts deeper than swords.","favoritesCount":2,"slug":"hugh-hammer-ozhy9o","updatedAt":"2021-06-18T03:33:45.216Z","favorited":true},{"tagList":[],"createdAt":"2021-06-18T03:21:36.074Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Chroyane","title":"Donnel Locke","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","favoritesCount":2,"slug":"donnel-locke-s3aozb","updatedAt":"2021-06-18T03:21:36.074Z","favorited":true},{"tagList":[],"createdAt":"2021-06-17T04:04:58.481Z","author":{"image":"https:\/\/www.google.com\/images\/branding\/googlelogo\/1x\/googlelogo_color_272x92dp.png","following":false,"bio":null,"username":"abdul123"},"description":"thank you","title":"hello","body":"dsfdgfhjhkjlk","favoritesCount":2,"slug":"hello-uyc65q","updatedAt":"2021-06-17T04:04:58.481Z","favorited":true}]}
+09:52:56.576 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:52:56.604 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:52:58.082 [main] DEBUG com.intuit.karate - response time in milliseconds: 1477
+1 < 200
+1 < Date: Mon, 21 Jun 2021 23:52:57 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < ETag: W/"da6390184d83f6c7c03cf20c6d838abd"
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: dd7fda3e-1795-4487-9653-e4ceadbbe742
+1 < X-Runtime: 0.620734
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad296e33a00002ebc6db6b000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=Nfsrmt9AX2O3uMwcE8VMTjGdYuO2Nky7I63LT5GT4JmYaHV614rzidckBv%2F5ntScNkKIFJHNezZ1J1cz1ObYq%2FdyuFrU%2B15NSA%2B5VJ%2BHWLw4tEFIIDdkvVEXyr2cfm8Og4GaZW1EJJo%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6631274b9b822ebc-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"articlesCount":500,"articles":[{"tagList":[],"createdAt":"2021-06-21T23:52:26.124Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"description":"Qarth","title":"Roro Uhoris","body":"Laughter is poison to fear.","favoritesCount":1,"slug":"roro-uhoris-u909pp","updatedAt":"2021-06-21T23:52:26.124Z","favorited":true},{"tagList":[],"createdAt":"2021-06-21T23:09:46.103Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-hmvurd","updatedAt":"2021-06-21T23:09:46.103Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:52:38.701Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"api testing is easy","title":"request from postman","body":"hello bros","favoritesCount":0,"slug":"request-from-postman-nk9eos","updatedAt":"2021-06-21T22:52:38.701Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:47.818Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"Joose"},"description":"Carros","title":"Carros","body":"Fusca","favoritesCount":0,"slug":"carros-jz1mqr","updatedAt":"2021-06-21T22:48:47.818Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:48:46.085Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"dbeltran"},"description":"atas","title":"testasrfat","body":"atasd","favoritesCount":0,"slug":"testasrfat-z4j6sd","updatedAt":"2021-06-21T22:48:46.085Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:45:30.302Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"@@tester"},"description":"testing this app","title":"testing","body":"this is a test","favoritesCount":0,"slug":"testing-nq00b1","updatedAt":"2021-06-21T22:45:30.302Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T22:31:33.692Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"Sunspear","title":"Wilbert","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","favoritesCount":1,"slug":"wilbert-fic14e","updatedAt":"2021-06-21T22:31:33.692Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:57:00.090Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"karate0606"},"description":"White Harbor","title":"Jyanna Frey","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","favoritesCount":0,"slug":"jyanna-frey-mwqm9c","updatedAt":"2021-06-21T21:57:00.090Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:42:40.369Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-yfrxe1","updatedAt":"2021-06-21T21:42:40.369Z","favorited":false},{"tagList":[],"createdAt":"2021-06-21T21:41:09.776Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"username122"},"description":"dssdf","title":"asd","body":"sdvsd","favoritesCount":0,"slug":"asd-wda0o5","updatedAt":"2021-06-21T21:41:09.776Z","favorited":false}]}
+09:52:58.085 [main] INFO  com.intuit.karate - [print] roro-uhoris-u909pp 
+09:52:58.088 [main] DEBUG com.intuit.karate - request:
+2 > GET https://conduit.productionready.io/api/articles/roro-uhoris-u909pp/comments
+2 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+2 > Host: conduit.productionready.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:52:59.052 [main] DEBUG com.intuit.karate - response time in milliseconds: 964
+2 < 200
+2 < Date: Mon, 21 Jun 2021 23:52:58 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cache-Control: max-age=0, private, must-revalidate
+2 < ETag: W/"5eca093834101597b450b36b63a3ca3b"
+2 < Status: 200 OK
+2 < Vary: Origin
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Powered-By: Phusion Passenger 4.0.60
+2 < X-Request-Id: bbe47d0a-51c0-4143-a7fd-5edb99d88b51
+2 < X-Runtime: 0.045113
+2 < X-XSS-Protection: 1; mode=block
+2 < CF-Cache-Status: DYNAMIC
+2 < cf-request-id: 0ad296e9a200001a7648bfb000000001
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=pvzMWf89dBxpUghaHGhDgLpf89NdqWFgcQpmDWdLkH7yFuZ9kjr1SGLvpZm6pXyfbWyrEMHbOIFrmZFsAkAOqgh0YOERF2U0%2BD%2FhQBD4KOn4e9lq3s4WwFayI%2F71BPtO7BkoEl3d7fM%3D"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 66312755ddcf1a76-SIN
+2 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"comments":[]}
+09:52:59.056 [main] INFO  com.intuit.karate - [print] ---------------------0 
+09:52:59.059 [main] DEBUG com.intuit.karate - request:
+3 > POST https://conduit.productionready.io/api/articles/roro-uhoris-u909pp/comments
+3 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 37
+3 > Host: conduit.productionready.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+3 > Accept-Encoding: gzip,deflate
+{"comment":{"body":"Rosby of Rosby"}}
+
+09:52:59.923 [main] DEBUG com.intuit.karate - response time in milliseconds: 864
+3 < 200
+3 < Date: Mon, 21 Jun 2021 23:52:59 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < Cache-Control: max-age=0, private, must-revalidate
+3 < ETag: W/"d13621e1a2fd438494b00732df447a5c"
+3 < Status: 200 OK
+3 < Vary: Origin
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: SAMEORIGIN
+3 < X-Powered-By: Phusion Passenger 4.0.60
+3 < X-Request-Id: 584077af-7a7a-4ffc-91be-4f0c73e58a93
+3 < X-Runtime: 0.056589
+3 < X-XSS-Protection: 1; mode=block
+3 < CF-Cache-Status: DYNAMIC
+3 < cf-request-id: 0ad296ece1000056141eaf7000000001
+3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=9IxsOh%2FEc1EzLgf16%2FENiAeiW%2BasMJ5qrwHP9RwywMhbBGRQ7G3TvRTyglms%2FgOFAa8IDRWZl8N%2BP9Jvh4tq4H4M%2FqPAiYJ9A0vdf1heJfXdhWWQH4Px5gwwXJE3yV9YaCZvGAmD12U%3D"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 6631275b08845614-SIN
+3 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"comment":{"createdAt":"2021-06-21T23:52:59.709Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"id":97933,"body":"Rosby of Rosby","updatedAt":"2021-06-21T23:52:59.709Z"}}
+09:52:59.931 [main] DEBUG com.intuit.karate - request:
+4 > GET https://conduit.productionready.io/api/articles/roro-uhoris-u909pp/comments
+4 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+4 > Host: conduit.productionready.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+4 > Accept-Encoding: gzip,deflate
+
+
+09:53:00.899 [main] DEBUG com.intuit.karate - response time in milliseconds: 967
+4 < 200
+4 < Date: Mon, 21 Jun 2021 23:53:00 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < Cache-Control: max-age=0, private, must-revalidate
+4 < ETag: W/"8393ef45a957f30f8a3782c63ad5d82d"
+4 < Status: 200 OK
+4 < Vary: Origin
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: SAMEORIGIN
+4 < X-Powered-By: Phusion Passenger 4.0.60
+4 < X-Request-Id: c4c80b40-9751-4883-9bca-df96be1335b9
+4 < X-Runtime: 0.049376
+4 < X-XSS-Protection: 1; mode=block
+4 < CF-Cache-Status: DYNAMIC
+4 < cf-request-id: 0ad296f0d3000056bed120d000000001
+4 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=3MRDM8KWqVsk7H5kDu8xUI%2FGToYzPIjcJQMyvezOVTlSQDx5eg2iyZBXBjHK8Qn0i1bf%2Fb8w5VMf%2By3NHIFCV1dcZHyKeD9NdEisSJbPBJL7HD3Qrhkuvy99KB5eEqUuqmYBagPRpc4%3D"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 66312761583056be-SIN
+4 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"comments":[{"createdAt":"2021-06-21T23:52:59.709Z","author":{"image":"https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg","following":false,"bio":null,"username":"KarateAPIAutomation"},"id":97933,"body":"Rosby of Rosby","updatedAt":"2021-06-21T23:52:59.709Z"}]}
+09:53:00.902 [main] INFO  com.intuit.karate - [print] ===========1 
+09:53:00.904 [main] INFO  com.intuit.karate - [print] ===========0 
+09:53:00.908 [main] DEBUG com.intuit.karate - request:
+5 > DELETE https://conduit.productionready.io/api/articles/roro-uhoris-u909pp/comments/97933
+5 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+5 > Host: conduit.productionready.io
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+5 > Accept-Encoding: gzip,deflate
+
+
+09:53:01.973 [main] DEBUG com.intuit.karate - response time in milliseconds: 1064
+5 < 200
+5 < Date: Mon, 21 Jun 2021 23:53:01 GMT
+5 < Content-Type: application/json; charset=utf-8
+5 < Transfer-Encoding: chunked
+5 < Connection: keep-alive
+5 < Cache-Control: max-age=0, private, must-revalidate
+5 < ETag: W/"99914b932bd37a50b983c5e7c90ae93b"
+5 < Status: 200 OK
+5 < Vary: Origin
+5 < X-Content-Type-Options: nosniff
+5 < X-Frame-Options: SAMEORIGIN
+5 < X-Powered-By: Phusion Passenger 4.0.60
+5 < X-Request-Id: fa7ca9d5-1cb2-49b7-aca8-7d5457d826ca
+5 < X-Runtime: 0.110361
+5 < X-XSS-Protection: 1; mode=block
+5 < CF-Cache-Status: DYNAMIC
+5 < cf-request-id: 0ad296f46e00002eb005833000000001
+5 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+5 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=mapBy4HjntiGCxwfPesvGLacW%2BAT1bvW6DDmiG3ExqbU%2FRXlzM4ryA7xUBhQ95SI%2FpXXZcprn845IPDWfjAVCXEQ7b114XbsXZeqkHgZDFP1%2F%2FB0Ye30hHjASNNxTSVdUqzwbX%2B5ngM%3D"}],"group":"cf-nel","max_age":604800}
+5 < NEL: {"report_to":"cf-nel","max_age":604800}
+5 < Server: cloudflare
+5 < CF-RAY: 663127671f692eb0-SIN
+5 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{}
+09:53:01.977 [main] DEBUG com.intuit.karate - request:
+6 > GET https://conduit.productionready.io/api/articles/roro-uhoris-u909pp/comments
+6 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+6 > Host: conduit.productionready.io
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+6 > Accept-Encoding: gzip,deflate
+
+
+09:53:02.995 [main] DEBUG com.intuit.karate - response time in milliseconds: 1018
+6 < 200
+6 < Date: Mon, 21 Jun 2021 23:53:02 GMT
+6 < Content-Type: application/json; charset=utf-8
+6 < Transfer-Encoding: chunked
+6 < Connection: keep-alive
+6 < Cache-Control: max-age=0, private, must-revalidate
+6 < ETag: W/"5eca093834101597b450b36b63a3ca3b"
+6 < Status: 200 OK
+6 < Vary: Origin
+6 < X-Content-Type-Options: nosniff
+6 < X-Frame-Options: SAMEORIGIN
+6 < X-Powered-By: Phusion Passenger 4.0.60
+6 < X-Request-Id: bca52dd7-098e-4c5c-a017-db4797f69408
+6 < X-Runtime: 0.150489
+6 < X-XSS-Protection: 1; mode=block
+6 < CF-Cache-Status: DYNAMIC
+6 < cf-request-id: 0ad296f8350000ddb7e42ba000000001
+6 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+6 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=ieq2fVAcS6Aq2jcYs6nHa1PQbbQxLjSsHJF%2BpfpgUwRXdZi5%2BzW8ruDNnLgobkKTRYnSgtsT8ddXPHJuVibhhAnNE6pfU5VXQ3t6itdNXOQkjTem9T%2Bc9UFB4IrcMN2HmY7KC683f1o%3D"}],"group":"cf-nel","max_age":604800}
+6 < NEL: {"report_to":"cf-nel","max_age":604800}
+6 < Server: cloudflare
+6 < CF-RAY: 6631276d2cccddb7-SIN
+6 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"comments":[]}
+09:53:02.998 [main] INFO  com.intuit.karate - [print] ==============0 
+09:53:03.453 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (0 remaining) classpath:ConduitApp/feature/HomeWork.feature
+09:53:03.466 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:03.476 [main] INFO  com.intuit.karate - [print] This is first scenario 
+09:53:03.583 [main] INFO  com.intuit.karate - [print] jude.emard 
+09:53:03.596 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:03.604 [main] INFO  com.intuit.karate - [print] This is second scenario 
+09:53:03.683 [main] INFO  com.intuit.karate - [print] jonathon.farrell 
+09:53:03.685 [main] INFO  com.intuit.karate - After Feature Text 
+09:53:04.033 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 5 (0 remaining) classpath:ConduitApp/feature/Hooks.feature
+09:53:04.039 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:04.174 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"password":"karate123","email":"paris48@test.com","username":"alita.homenick"}}
+
+09:53:05.043 [main] DEBUG com.intuit.karate - response time in milliseconds: 868
+1 < 200
+1 < Date: Mon, 21 Jun 2021 23:53:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Connection: keep-alive
+1 < cache-control: max-age=0, private, must-revalidate
+1 < etag: W/"4971dde8bbfdd663e2804559033894f4"
+1 < location: /
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: ed2e682f-91ce-4cdc-928d-40e18378686a
+1 < x-runtime: 0.099246
+1 < x-xss-protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad29700c4000055d182998000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=I7VrIy2dqkNGXWuXzmlzxnYw4oEshiZCzWpGGmwJNb0yV5471MfDfDlDuTglnUYbGpgveTULMMciPVtI2mYwM0BuNF4kAEKISnavoMYamAmSGHxn5JJCh9fXnIRY1q8ZDJ6plbFaQB8%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6631277adb7b55d1-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"user":{"createdAt":"2021-06-21T23:53:04.842Z","image":null,"bio":null,"id":177262,"email":"paris48@test.com","updatedAt":"2021-06-21T23:53:04.849Z","username":"alita.homenick","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTc3MjYyLCJ1c2VybmFtZSI6ImFsaXRhLmhvbWVuaWNrIiwiZXhwIjoxNjI5NTAzNTg0fQ.dXKWWynAoBo5VjN1g3VNFJrak9yGShBfOuUpFzD9-zM"}}
+09:53:05.059 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:05.147 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 85
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"password":"Karate123","email":"hai27@test.com","username":"KarateUser720"}}
+
+09:53:06.201 [main] DEBUG com.intuit.karate - response time in milliseconds: 1054
+1 < 422
+1 < Date: Mon, 21 Jun 2021 23:53:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < Status: 422 Unprocessable Entity
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 37c6ec52-424f-494f-97f4-d017311fc849
+1 < X-Runtime: 0.113405
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad297051d0000dd02fc228000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=UW32DsHo4sEFBKKDM1z46RcTVkl8aU5VnBxFZ484utWMCMp7COBx0Ji3ao6njvrFaZZjl9W7xUe1Twa8l4sUxI5537%2B4HI1rDMhkDD0xpgTvO%2BBmR1aOcLI4ijqsN6LgR8HvnxqrxPc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 66312781cdd7dd02-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+09:53:06.206 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:06.263 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"password":"Karate123","email":"karate725@test.com","username":"kristian.renner"}}
+
+09:53:07.297 [main] DEBUG com.intuit.karate - response time in milliseconds: 1033
+1 < 422
+1 < Date: Mon, 21 Jun 2021 23:53:07 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < Status: 422 Unprocessable Entity
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 790e88d0-d873-4981-a5a5-869870888c51
+1 < X-Runtime: 0.084934
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad297099f0000dd93263f4000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=mpUDWk9Se%2BI4rofWS877TMmj7zeJ1rSJkIO%2BUO1yHpgrXHfzkFNgxMzX2hAAz0k%2FRZNx2%2F4CFCSKa%2FzG2DOfjkLQJdFQZteeQsKUvc5GJrfsBbhEvUD%2BcnkiXip7G7K%2Ba%2FqLN%2FHOmIo%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 66312788fb44dd93-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+09:53:07.304 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:07.379 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 97
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"password":"Karate123","email":"katrice1@test.com","username":"KarateUser725725725725"}}
+
+09:53:08.218 [main] DEBUG com.intuit.karate - response time in milliseconds: 839
+1 < 422
+1 < Date: Mon, 21 Jun 2021 23:53:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < Status: 422 Unprocessable Entity
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 780ab3c3-85e8-47ea-8fc8-6e9ed04423f8
+1 < X-Runtime: 0.086159
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad2970d3800002e9b452b0000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=8glG3yiU0zVYp%2Fj09e%2Bk9ew8Mt0T7oD5QVkTp7U0mqyN3HP5usGMSxCI40LOBWFPdqrzFObhosv%2F35a58GV5dFNohD4V%2B8fISgjUFxaZugFI1LsuQEmj7y3x61dybqXY50czCd%2B%2FwXA%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6631278eb8742e9b-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"errors":{"username":["is too long (maximum is 20 characters)"]}}
+09:53:08.226 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:08.280 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"password":"Karate123","email":"karate730","username":"thanh.watsica"}}
+
+09:53:09.037 [main] DEBUG com.intuit.karate - response time in milliseconds: 755
+1 < 422
+1 < Date: Mon, 21 Jun 2021 23:53:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < Status: 422 Unprocessable Entity
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: d613fa8a-5df2-48ca-bb49-d8ccad09e6f9
+1 < X-Runtime: 0.085825
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad29710e30000567cfe229000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=6Y6sVflEDKYnx%2FwebGm7BV9P7z14rYHuU1SLU4p5vWsk%2B94sBpynndHti1fJkRgYLsyDqyGPazmvN8BcK1Hk8oOTXNssTCKE0GXIn%2FfLXavOS3Vx9dfjnVc9bQhFc%2BOr91zzE15HeEs%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663127949fdf567c-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"errors":{"email":["is invalid"]}}
+09:53:09.046 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:09.100 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 87
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"password":"Kar","email":"glennie44@test.com","username":"verline.halvorson"}}
+
+09:53:09.857 [main] DEBUG com.intuit.karate - response time in milliseconds: 757
+1 < 422
+1 < Date: Mon, 21 Jun 2021 23:53:09 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < Status: 422 Unprocessable Entity
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: ca0e15fb-0ec6-481e-a1f7-3f53c83c1f04
+1 < X-Runtime: 0.104582
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad297141700001900db1df000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=379irQEAbp2xyhhDF%2Fb58f9oBROp4De5vGKewIfWPxsRuhos7vIBWLNQdZZjxsl9kFpCo44dPXdoriwNCCp%2BKhoqwuAcTSoOJZmuLJQZha8uJg2snUN3oJsyvvrKYumvQZxvdROio9Q%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 66312799ba951900-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"errors":{"password":["is too short (minimum is 8 characters)"]}}
+09:53:09.864 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:09.932 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 70
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"password":"Karate123","email":"","username":"doyle.corwin"}}
+
+09:53:10.879 [main] DEBUG com.intuit.karate - response time in milliseconds: 947
+1 < 422
+1 < Date: Mon, 21 Jun 2021 23:53:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < Status: 422 Unprocessable Entity
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: dfb9a1f6-7e3e-4f27-92d0-2fb33702dfee
+1 < X-Runtime: 0.083885
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad29717a000002e8600af2000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=%2Fn9oFIzjuaUCZIKVLCxHTf7%2B6Y4J6zIM7UrTnmaEoCkIlh5x28871E2qxqOLW66K%2BdbjalishE0yVcP6PAsyacnSvSa9BXolZR%2BDwTWYS%2Beqrmnzdr36RBdELQuGO3ovtzTuPLbRex0%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6631279f686d2e86-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"errors":{"email":["can't be blank"]}}
+09:53:10.888 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:10.947 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 78
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"password":"Karate123","email":"granville11@test.com","username":""}}
+
+09:53:12.131 [main] DEBUG com.intuit.karate - response time in milliseconds: 1184
+1 < 422
+1 < Date: Mon, 21 Jun 2021 23:53:11 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < cache-control: no-cache
+1 < status: 422 Unprocessable Entity
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: e7b8263f-3dd6-4641-be4e-9c7cdb12bdcf
+1 < x-runtime: 0.086013
+1 < x-xss-protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad2971c3000002fdc39b41000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=zBBBeuurG1%2FafPX0spPi4Ndaui1LvLm%2B08Oa9bY6BjYuHCQIWk0cJnsdwDlUj9x%2FjMGFgAsWpg%2Bu%2FiDFZVr4gQqMfK1P9RWan46hyQE%2BlWmYHjyfffsw%2FFH%2BnQ4ih0dcRIJAEyar3s4%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663127a6bddd2fdc-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"errors":{"username":["can't be blank","is too short (minimum is 1 character)"]}}
+09:53:12.142 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:53:12.200 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 80
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"password":"","email":"cecilia93@test.com","username":"leonardo.hahn"}}
+
+09:53:13.235 [main] DEBUG com.intuit.karate - response time in milliseconds: 1035
+1 < 422
+1 < Date: Mon, 21 Jun 2021 23:53:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < Status: 422 Unprocessable Entity
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 1489e38a-78c4-4e1d-955f-092d97ce1017
+1 < X-Runtime: 0.009683
+1 < X-XSS-Protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 0ad29720d40000016aef0a2000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=V1x5jzyPoQ%2FCTGz%2Fhzevh%2F0CdVJL4Fkqy3Ojcc67dpn%2BGnm7bfhPKm8nbVR%2FAk8wI9Lg6H1yoS8gDGCxQEYu83X3aQZxLNuwHz%2BTqLU4oXIcxn7FWV0h0fZrv%2BIZZlVwzywlU%2FbFdvQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 663127ae1c1e016a-SIN
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"errors":{"password":["can't be blank"]}}
+09:53:13.897 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:ConduitApp/feature/SignUp.feature
+09:53:13.898 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete

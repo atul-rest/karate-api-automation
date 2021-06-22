@@ -22,7 +22,7 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-pass" class="bg-success">7</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -30,13 +30,31 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-06-21 01:09:32 pm</div>
+    <div>2021-06-22 09:52:52 am</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Get all tags</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:14]"><span>[2:14]</span> <span>Get 10 articles from the page</span></a>
+          </div>
+          <div class="nav-item passed">
             <a href="#[3:44]"><span>[3:44]</span> <span>Conditional Logic</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:63]"><span>[4:63]</span> <span>Retry Call</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:73]"><span>[5:73]</span> <span>Sleep Call</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:83]"><span>[6:83]</span> <span>Number to String</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:88]"><span>[7:88]</span> <span>String to Number</span></a>
           </div>
         </div>
       </div>
@@ -50,10 +68,536 @@
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Get all tags</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2025</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:52:33.836 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;tags&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2007</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">09:52:33.855 request:
+1 &gt; GET https://conduit.productionready.io/api/tags
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:52:35.858 response time in milliseconds: 2001
+1 &lt; 200
+1 &lt; Date: Mon, 21 Jun 2021 23:52:35 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; ETag: W/&quot;d9239a2dcddfb75776bbfee74fbb1e42&quot;
+1 &lt; Status: 200 OK
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 39cb39c1-51e9-489a-98fb-2cd887e22275
+1 &lt; X-Runtime: 1.099101
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; cf-request-id: 0ad2968ad50000568e10244000000001
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=OHTpFTA8B%2BAq3vGnckRkhm2nVNAKcgquUj2Fe7LqFjXGgNUh%2BEMyeYJ%2F398ikwD0dnAfi8ilzekh2YgmNYvYeynROWuMeodxEncux4iJlojqP68WcRTo7YJMQETRfSs%2BoZgfPjlbrHc%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 663126be2ec7568e-SIN
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;tags&quot;:[&quot;\u200C&quot;,&quot;\u200C\u200C&quot;,&quot;\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;\u200C\u200C\u200C\u200C\u200C\u200C&quot;,&quot;HuManIty&quot;,&quot;Hu\u200CMan\u200CIty&quot;,&quot;Gandhi&quot;,&quot;HITLER&quot;,&quot;SIDA&quot;,&quot;BlackLivesMatter&quot;,&quot;Black\u200CLives\u200CMatter&quot;,&quot;test&quot;,&quot;dragons&quot;,&quot;butt&quot;]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.tags == &quot;#array&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.tags == &quot;#string&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:14]</span>
+                <span class="scenario-name">Get 10 articles from the page</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2548</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:52:35.884 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timeValidator = read(&#39;classpath:helpers/timeValidator.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2407</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">09:52:35.920 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:52:38.323 response time in milliseconds: 2400
+1 &lt; 200
+1 &lt; Date: Mon, 21 Jun 2021 23:52:38 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; ETag: W/&quot;97b36c98e0f0edaa09e6049420341182&quot;
+1 &lt; Status: 200 OK
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 1e9f2787-fdb0-420a-9f86-9c0bac92620b
+1 &lt; X-Runtime: 0.609798
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; cf-request-id: 0ad29696070000173c12362000000001
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=4xqcLdheK42Y8UofpCJApXS1fF2eSQX1iYA27SRwcEurvBdH5ohbAobTsu9LT73TTv9Ql1MJgYMaNDnniOaHun2tK%2F2Lg6YPnOk3XHSWoGMTF3DUBcv7JWu%2F2G7jS6GL%2FZwbzgkpgRA%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 663126d00982173c-SIN
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateAPIAutomation&quot;},&quot;description&quot;:&quot;Qarth&quot;,&quot;title&quot;:&quot;Roro Uhoris&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;roro-uhoris-u909pp&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-hmvurd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-nk9eos&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;Joose&quot;},&quot;description&quot;:&quot;Carros&quot;,&quot;title&quot;:&quot;Carros&quot;,&quot;body&quot;:&quot;Fusca&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;carros-jz1mqr&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;atas&quot;,&quot;title&quot;:&quot;testasrfat&quot;,&quot;body&quot;:&quot;atasd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testasrfat-z4j6sd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;@@tester&quot;},&quot;description&quot;:&quot;testing this app&quot;,&quot;title&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;this is a test&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testing-nq00b1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;Sunspear&quot;,&quot;title&quot;:&quot;Wilbert&quot;,&quot;body&quot;:&quot;And I have a tender spot in my heart for cripples and bastards and broken things.&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;wilbert-fic14e&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;White Harbor&quot;,&quot;title&quot;:&quot;Jyanna Frey&quot;,&quot;body&quot;:&quot;Never forget who you are. The rest of the world won&#39;t. Wear it like an armor and it can never be used against you.&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;jyanna-frey-mwqm9c&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-yfrxe1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-wda0o5&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;favorited&quot;:false}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == {&quot;articles&quot;: &quot;#[10]&quot;, &quot;articlesCount&quot;: 500}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.articles ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">106</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.22">{
+    &quot;title&quot;: &quot;#string&quot;,
+    &quot;slug&quot;: &quot;#string&quot;,
+    &quot;body&quot;: &quot;#string&quot;,
+    &quot;createdAt&quot;: &quot;#? timeValidator(_)&quot;,
+    &quot;updatedAt&quot;: &quot;#? timeValidator(_)&quot;,
+    &quot;tagList&quot;: &quot;#array&quot;,
+    &quot;description&quot;: &quot;#string&quot;,
+    &quot;author&quot;: {
+        &quot;username&quot;: &quot;#string&quot;,
+        &quot;bio&quot;: &quot;##string&quot;,
+        &quot;image&quot;: &quot;#string&quot;, 
+        &quot;following&quot;: &#39;#boolean&#39;
+    },
+    &quot;favorited&quot;: &#39;#boolean&#39;,
+    &quot;favoritesCount&quot;: &#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
           <div class="scenario-heading" id="[3:44]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">debug</a>
+                
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[3:44]</span>
@@ -62,7 +606,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>5294</span>
+              <span>ms:</span>&nbsp;<span>4493</span>
             </div>
           </div>
           <div class="step-row">
@@ -94,226 +638,10 @@
 
   
 
-  <div class="preformatted" data-parent="0.5">13:09:26.745 &lt;&lt; lock released, cached callSingle: classpath:helpers/CreateToken.feature
-</div>   
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.5.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">helpers.CreateToken</div>
-      </div>
-      <div class="time-cell passed">2494</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.4">
-      <div class="step-ref bg-step">4</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url apiUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.5.0.call.0.4">13:09:24.114 karate.env system property was: null 
-13:09:24.132 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+  <div class="preformatted" data-parent="0.5">09:52:38.451 karate.env system property was: null 
 </div>   
 
   
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">19</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {&quot;user&quot;:{&quot;email&quot;:&quot;#(userEmail)&quot;,&quot;password&quot;:&quot;#(userPassword)&quot;}}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">54</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method Post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2413</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.5.0.call.0.7">13:09:25.331 request:
-1 &gt; POST https://conduit.productionready.io/api/users/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 67
-1 &gt; Host: conduit.productionready.io
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;user&quot;:{&quot;password&quot;:&quot;karateapi@2021&quot;,&quot;email&quot;:&quot;karatejun@test.com&quot;}}
-
-13:09:26.731 response time in milliseconds: 1397
-1 &lt; 200
-1 &lt; Date: Mon, 21 Jun 2021 03:09:26 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Connection: keep-alive
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; ETag: W/&quot;9add80f4e968f9b2d18cd8bc3076b353&quot;
-1 &lt; Status: 200 OK
-1 &lt; Vary: Origin
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Frame-Options: SAMEORIGIN
-1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 82f0a36d-f1b5-433f-be07-e9496f7e20f8
-1 &lt; X-Runtime: 0.082195
-1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; cf-request-id: 0ace246abc000019b9493dc000000001
-1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=SZZcX2DABlqhE3GfhqTxBvbrunc4ZFzvInQEa80eWnySPmjo31sFGN8wi3LXLg4hQmDTovhSc83ZJdCqUWRQIBkRJv3sUoYHRcTIF3XpLBxTzIO%2FYNtp%2FeJQof7xykfqWTJHqPUDXMY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 662a09bdfd3719b9-SIN
-1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
-{&quot;user&quot;:{&quot;createdAt&quot;:&quot;2021-06-04T05:15:38.315Z&quot;,&quot;image&quot;:null,&quot;bio&quot;:null,&quot;id&quot;:173662,&quot;email&quot;:&quot;karatejun@test.com&quot;,&quot;updatedAt&quot;:&quot;2021-06-04T05:15:38.320Z&quot;,&quot;username&quot;:&quot;KarateAPIAutomation&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg&quot;}}
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = response.user.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">8</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
 
 </div>
 </div>
@@ -330,7 +658,7 @@
         <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0 }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -358,7 +686,7 @@
         <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -386,7 +714,7 @@
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">1713</div>
+    <div class="time-cell passed">1506</div>
   </div>
 
    
@@ -395,40 +723,40 @@
 
   
 
-  <div class="preformatted" data-parent="0.47">13:09:26.799 request:
+  <div class="preformatted" data-parent="0.47">09:52:38.463 request:
 1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
-1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
 1 &gt; Host: conduit.productionready.io
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-13:09:28.470 response time in milliseconds: 1663
+09:52:39.960 response time in milliseconds: 1495
 1 &lt; 200
-1 &lt; Date: Mon, 21 Jun 2021 03:09:28 GMT
+1 &lt; Date: Mon, 21 Jun 2021 23:52:39 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; ETag: W/&quot;57c649c6dd9df4f5956d3ac8636b8bcf&quot;
+1 &lt; ETag: W/&quot;97b36c98e0f0edaa09e6049420341182&quot;
 1 &lt; Status: 200 OK
 1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 868d0870-3aad-4ece-94bc-e4fbd15da6f8
-1 &lt; X-Runtime: 0.618611
+1 &lt; X-Request-Id: 59928c83-235f-43eb-906c-66e03f352740
+1 &lt; X-Runtime: 0.610664
 1 &lt; X-XSS-Protection: 1; mode=block
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; cf-request-id: 0ace246f7f0000de01e53d5000000001
+1 &lt; cf-request-id: 0ad2969c95000001a74d2a3000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=l9AOv6TtDIBNyVmLaXlKCOvAgFS84zXt3u7g9Ff2FiXIHj2tX%2F23YsoSj6P8j2yUqqSFR7NC6wGzQmg9KrcOi%2FuUSgf9Agel4wr7ro1s7O2nw4sxxZNxA5ex9CVKOKihJyq9b%2FdyFmc%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=gXgbvTQmQyNywhNEOQUFa0FnN3H9m%2BsJhJF%2FRZQxXYWJFD6Wo%2BdaTSXEwBJ4GmXqrOvscMJ1qhfhbJ3j08Bw5CX1w9j1iAbWkPvzoXV3unuqgTw4JbXSiZrXbRmsuEKZm0upSSu%2BZYc%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 662a09c59fe8de01-SIN
+1 &lt; CF-RAY: 663126da884701a7-SIN
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
-{&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-bl5tw2&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:35.094Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;test-title-ldn66s&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:35.094Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:24.070Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-jf0u7p&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:24.070Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:02:39.216Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;test-title-rfz0pv&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:02:39.216Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:01:18.415Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;test-title-chqa73&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:01:18.415Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:55:15.550Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-wl3cvg&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:55:15.550Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:53:04.517Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-u975bg&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:53:04.517Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:50:45.161Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/sm.ign.com\/ign_pt\/screenshot\/default\/1-wzz9owp3qjjcswtititjkw_6g31.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:&quot;Nothing&quot;,&quot;username&quot;:&quot;nitaicharan&quot;},&quot;description&quot;:&quot;about&quot;,&quot;title&quot;:&quot;Teste&quot;,&quot;body&quot;:&quot;markdown&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;teste-uqsmrw&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:50:45.161Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:34:02.116Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-ux3ovq&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:34:02.116Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:33:39.641Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-avd589&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:33:39.641Z&quot;,&quot;favorited&quot;:false}]}
+{&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateAPIAutomation&quot;},&quot;description&quot;:&quot;Qarth&quot;,&quot;title&quot;:&quot;Roro Uhoris&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;roro-uhoris-u909pp&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-hmvurd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-nk9eos&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;Joose&quot;},&quot;description&quot;:&quot;Carros&quot;,&quot;title&quot;:&quot;Carros&quot;,&quot;body&quot;:&quot;Fusca&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;carros-jz1mqr&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;atas&quot;,&quot;title&quot;:&quot;testasrfat&quot;,&quot;body&quot;:&quot;atasd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testasrfat-z4j6sd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;@@tester&quot;},&quot;description&quot;:&quot;testing this app&quot;,&quot;title&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;this is a test&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testing-nq00b1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;Sunspear&quot;,&quot;title&quot;:&quot;Wilbert&quot;,&quot;body&quot;:&quot;And I have a tender spot in my heart for cripples and bastards and broken things.&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;wilbert-fic14e&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;White Harbor&quot;,&quot;title&quot;:&quot;Jyanna Frey&quot;,&quot;body&quot;:&quot;Never forget who you are. The rest of the world won&#39;t. Wear it like an armor and it can never be used against you.&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;jyanna-frey-mwqm9c&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-yfrxe1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-wda0o5&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;favorited&quot;:false}]}
 </div>   
 
   
@@ -476,7 +804,7 @@
         <span>*</span>&nbsp;<span>def favoritesCount = response.articles[0].favoritesCount</span>
       </div>
     </div>
-    <div class="time-cell passed">16</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -504,7 +832,7 @@
         <span>*</span>&nbsp;<span>def article = response.articles[0]</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -539,7 +867,7 @@
         <span>*</span>&nbsp;<span>def result = favoritesCount == 0 ? karate.call(&#39;classpath:helpers/AddLikes.feature&#39;, article).likesCount : favoritesCount</span>
       </div>
     </div>
-    <div class="time-cell passed">1287</div>
+    <div class="time-cell passed">1020</div>
   </div>
 
    
@@ -558,7 +886,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">helpers.AddLikes</div>
       </div>
-      <div class="time-cell passed">1232</div>
+      <div class="time-cell passed">1003</div>
     </div>
     <div>
       <div><div>
@@ -602,7 +930,7 @@
         <span>Given</span>&nbsp;<span>path &#39;articles&#39; ,slug, &#39;favorite&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -658,7 +986,7 @@
         <span>When</span>&nbsp;<span>method Post</span>
       </div>
     </div>
-    <div class="time-cell passed">1218</div>
+    <div class="time-cell passed">1001</div>
   </div>
 
    
@@ -667,9 +995,9 @@
 
   
 
-  <div class="preformatted" data-parent="0.54.0.call.0.10">13:09:28.572 request:
-1 &gt; POST https://conduit.productionready.io/api/articles/this-is-a-title-bl5tw2/favorite
-1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg
+  <div class="preformatted" data-parent="0.54.0.call.0.10">09:52:39.984 request:
+1 &gt; POST https://conduit.productionready.io/api/articles/roro-uhoris-u909pp/favorite
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 2
 1 &gt; Host: conduit.productionready.io
@@ -678,31 +1006,31 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {}
 
-13:09:29.784 response time in milliseconds: 1212
+09:52:40.982 response time in milliseconds: 998
 1 &lt; 200
-1 &lt; Date: Mon, 21 Jun 2021 03:09:29 GMT
+1 &lt; Date: Mon, 21 Jun 2021 23:52:40 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; ETag: W/&quot;61c2e5415ff3444cd2852e8c92c6f984&quot;
+1 &lt; ETag: W/&quot;da73c9757ca894d74b44d46042c7beef&quot;
 1 &lt; Status: 200 OK
 1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 624cc620-6b03-4aa6-9af8-772dca18a39d
-1 &lt; X-Runtime: 0.066251
+1 &lt; X-Request-Id: 0dd7e9a5-591c-4ecf-998f-f7b07f5dd518
+1 &lt; X-Runtime: 0.076174
 1 &lt; X-XSS-Protection: 1; mode=block
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; cf-request-id: 0ace2476b300001a15f71ce000000001
+1 &lt; cf-request-id: 0ad296a27f00002f7390b47000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=JrwztCtFTG3RQCcoIgQi4T5SSUM04lk24yWfk7x2SzDoYipmdX5hKJ55PzRn4rDQwSlLBanZ8U5HM%2B%2BjqCPizvu4LSUe%2Fatl5wR4byFjswN4Caucqy%2BFCPG%2B%2FwRVO7NovRVGIOdw7w8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=Y2PsDfQn0MYd%2FLZdjLlYEFsKEug1vByz4VAmZYxgNvox4DXUWiDEk3CNb%2Fteg9juaEgH2W%2FNuH4JE6EwE71pZxoL5%2Fny%2FleloqsRBPNMD2wLBFux3vyTNpRiwX%2FgbN0wAQy7jlV7Kdg%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 662a09d119b81a15-SIN
+1 &lt; CF-RAY: 663126e3f84a2f73-SIN
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
-{&quot;article&quot;:{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;this-is-a-title-bl5tw2&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;favorited&quot;:true}}
+{&quot;article&quot;:{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateAPIAutomation&quot;},&quot;description&quot;:&quot;Qarth&quot;,&quot;title&quot;:&quot;Roro Uhoris&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;roro-uhoris-u909pp&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;favorited&quot;:true}}
 </div>   
 
   
@@ -750,7 +1078,7 @@
         <span>*</span>&nbsp;<span>def likesCount = response.article.favoritesCount</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -811,7 +1139,7 @@
         <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -839,7 +1167,7 @@
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">2248</div>
+    <div class="time-cell passed">1962</div>
   </div>
 
    
@@ -848,40 +1176,40 @@
 
   
 
-  <div class="preformatted" data-parent="0.58">13:09:29.794 request:
+  <div class="preformatted" data-parent="0.58">09:52:40.988 request:
 2 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
-2 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk0Mjg5NjZ9.7M4XFpAU4JbH90l3QkYfUPkAs4LMbvOM0gXNpIKU6mg
+2 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
 2 &gt; Host: conduit.productionready.io
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-13:09:32.038 response time in milliseconds: 2242
+09:52:42.947 response time in milliseconds: 1957
 2 &lt; 200
-2 &lt; Date: Mon, 21 Jun 2021 03:09:31 GMT
+2 &lt; Date: Mon, 21 Jun 2021 23:52:42 GMT
 2 &lt; Content-Type: application/json; charset=utf-8
 2 &lt; Transfer-Encoding: chunked
 2 &lt; Connection: keep-alive
 2 &lt; Cache-Control: max-age=0, private, must-revalidate
-2 &lt; ETag: W/&quot;ecda273f0644dafac2ce53597ffafe99&quot;
+2 &lt; ETag: W/&quot;da6390184d83f6c7c03cf20c6d838abd&quot;
 2 &lt; Status: 200 OK
 2 &lt; Vary: Origin
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; X-Frame-Options: SAMEORIGIN
 2 &lt; X-Powered-By: Phusion Passenger 4.0.60
-2 &lt; X-Request-Id: e4158509-b2c2-4e1d-a6d1-1e6a06c1a6cc
-2 &lt; X-Runtime: 1.300988
+2 &lt; X-Request-Id: eeb5c37a-0e04-4d96-ae74-f0db44478af2
+2 &lt; X-Runtime: 1.004649
 2 &lt; X-XSS-Protection: 1; mode=block
 2 &lt; CF-Cache-Status: DYNAMIC
-2 &lt; cf-request-id: 0ace247b1b000019fde83a7000000001
+2 &lt; cf-request-id: 0ad296a6d40000565fb2303000000001
 2 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=pdxnkla6B5GUjrAxOG50NqlTDYau%2BNluFpFTM7gg6SJfRp%2B%2FCytSWsQi%2FocUsAcN%2FOdC%2FSzjAx%2FBKfgX2RZBKTtUj9NQz1PoUCp%2BVPUyjB0uDnimcofBq4EwnhTHIkwYEsekKbyQC4A%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=h72vWK0uT1LdlZhoSba4XVSIMa4Iy8OyCZ0oQq0BBT1l9VYojYVh824G%2FUbqG4FPaal8ok9pmBhhXQFeZc0r5pfsShWvmJimarlFbo4gblZfXLfws5exJDeAmaA0ARosN%2FNBopjaVw0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 2 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 2 &lt; Server: cloudflare
-2 &lt; CF-RAY: 662a09d82e3319fd-SIN
+2 &lt; CF-RAY: 663126eaef5b565f-SIN
 2 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
-{&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;this-is-a-title-bl5tw2&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:45.956Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:03:24.070Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-jf0u7p&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:03:24.070Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:02:39.216Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;test-title-rfz0pv&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:02:39.216Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T03:01:18.415Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;rajeshkumarseal&quot;},&quot;description&quot;:&quot;Test 1&quot;,&quot;title&quot;:&quot;Test Title&quot;,&quot;body&quot;:&quot;Test 2&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;test-title-chqa73&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T03:01:18.415Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:55:15.550Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-wl3cvg&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:55:15.550Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:53:04.517Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-u975bg&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:53:04.517Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:50:45.161Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/sm.ign.com\/ign_pt\/screenshot\/default\/1-wzz9owp3qjjcswtititjkw_6g31.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:&quot;Nothing&quot;,&quot;username&quot;:&quot;nitaicharan&quot;},&quot;description&quot;:&quot;about&quot;,&quot;title&quot;:&quot;Teste&quot;,&quot;body&quot;:&quot;markdown&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;teste-uqsmrw&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:50:45.161Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:34:02.116Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-ux3ovq&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:34:02.116Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:33:39.641Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-avd589&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:33:39.641Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T02:33:21.229Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;mrahman&quot;},&quot;description&quot;:&quot;This is a description&quot;,&quot;title&quot;:&quot;This is a title&quot;,&quot;body&quot;:&quot;This is a body of the Article&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;this-is-a-title-nzoaz9&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T02:33:21.229Z&quot;,&quot;favorited&quot;:false}]}
+{&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateAPIAutomation&quot;},&quot;description&quot;:&quot;Qarth&quot;,&quot;title&quot;:&quot;Roro Uhoris&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;roro-uhoris-u909pp&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-hmvurd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-nk9eos&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;Joose&quot;},&quot;description&quot;:&quot;Carros&quot;,&quot;title&quot;:&quot;Carros&quot;,&quot;body&quot;:&quot;Fusca&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;carros-jz1mqr&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;atas&quot;,&quot;title&quot;:&quot;testasrfat&quot;,&quot;body&quot;:&quot;atasd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testasrfat-z4j6sd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;@@tester&quot;},&quot;description&quot;:&quot;testing this app&quot;,&quot;title&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;this is a test&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testing-nq00b1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;Sunspear&quot;,&quot;title&quot;:&quot;Wilbert&quot;,&quot;body&quot;:&quot;And I have a tender spot in my heart for cripples and bastards and broken things.&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;wilbert-fic14e&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;White Harbor&quot;,&quot;title&quot;:&quot;Jyanna Frey&quot;,&quot;body&quot;:&quot;Never forget who you are. The rest of the world won&#39;t. Wear it like an armor and it can never be used against you.&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;jyanna-frey-mwqm9c&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-yfrxe1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-wda0o5&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;favorited&quot;:false}]}
 </div>   
 
   
@@ -929,7 +1257,847 @@
         <span>And</span>&nbsp;<span>match response.articles[0].favoritesCount == result</span>
       </div>
     </div>
-    <div class="time-cell passed">17</div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:63]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:63]</span>
+                <span class="scenario-name">Retry Call</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2324</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:63]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:52:42.960 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure retry = {count: 10, interval: 5000}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>retry until response.articles[0].favoritesCount == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2323</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.69">09:52:42.966 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:52:45.285 response time in milliseconds: 2317
+1 &lt; 200
+1 &lt; Date: Mon, 21 Jun 2021 23:52:44 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; ETag: W/&quot;da6390184d83f6c7c03cf20c6d838abd&quot;
+1 &lt; Status: 200 OK
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 2e874348-460c-4909-88f5-3d3388734839
+1 &lt; X-Runtime: 0.861276
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; cf-request-id: 0ad296adee0000dd0ac01bb000000001
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=qoSMR585SfXI2YiotGC%2FLLe2W6Zg5Z1%2BYSow6x2aDq5BaETPk0Ix5S1Jz%2Bz5T%2FhrvnO7oLZas0EAkKudpqlWQapS3D3sTpdgzDG404efjQB6kYLfI%2F%2FWRA3pje%2FWV1GHaz9vGlyxXgk%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 663126f6496add0a-SIN
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateAPIAutomation&quot;},&quot;description&quot;:&quot;Qarth&quot;,&quot;title&quot;:&quot;Roro Uhoris&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;roro-uhoris-u909pp&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-hmvurd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-nk9eos&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;Joose&quot;},&quot;description&quot;:&quot;Carros&quot;,&quot;title&quot;:&quot;Carros&quot;,&quot;body&quot;:&quot;Fusca&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;carros-jz1mqr&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;atas&quot;,&quot;title&quot;:&quot;testasrfat&quot;,&quot;body&quot;:&quot;atasd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testasrfat-z4j6sd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;@@tester&quot;},&quot;description&quot;:&quot;testing this app&quot;,&quot;title&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;this is a test&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testing-nq00b1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;Sunspear&quot;,&quot;title&quot;:&quot;Wilbert&quot;,&quot;body&quot;:&quot;And I have a tender spot in my heart for cripples and bastards and broken things.&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;wilbert-fic14e&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;White Harbor&quot;,&quot;title&quot;:&quot;Jyanna Frey&quot;,&quot;body&quot;:&quot;Never forget who you are. The rest of the world won&#39;t. Wear it like an armor and it can never be used against you.&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;jyanna-frey-mwqm9c&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-yfrxe1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-wda0o5&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;favorited&quot;:false}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:73]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:73]</span>
+                <span class="scenario-name">Sleep Call</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6652</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:73]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:73]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:52:45.295 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sleep = function(pause){ java.lang.Thread.sleep(pause) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params { limit: 10, offset: 0 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1625</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.79">09:52:45.303 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTczNjYyLCJ1c2VybmFtZSI6IkthcmF0ZUFQSUF1dG9tYXRpb24iLCJleHAiOjE2Mjk1MDM1NDR9.EjymbClG48NiggJxjxRXQ-lOWraalERbZNcyjEZcXS8
+1 &gt; Host: conduit.productionready.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:52:46.923 response time in milliseconds: 1619
+1 &lt; 200
+1 &lt; Date: Mon, 21 Jun 2021 23:52:46 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; ETag: W/&quot;da6390184d83f6c7c03cf20c6d838abd&quot;
+1 &lt; Status: 200 OK
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: d463a289-b8dd-42a2-b1f7-aac978c0a80c
+1 &lt; X-Runtime: 0.671597
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; cf-request-id: 0ad296b7a000002e8c7608f000000001
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=vylQzRA7oG9uNraVATS5N2YNcKdtL5LAzXsWLvLwKBq8X1ol4q%2Fugl9S9LK5fhzO631%2FRrK6hTLKELlWjQenmEg5NtuKycQu7%2BCZ02igjmGc6rB454KPgEnk%2FZlJ7Z%2BXk9mG4bcux0Q%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 66312705cb792e8c-SIN
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;articlesCount&quot;:500,&quot;articles&quot;:[{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;KarateAPIAutomation&quot;},&quot;description&quot;:&quot;Qarth&quot;,&quot;title&quot;:&quot;Roro Uhoris&quot;,&quot;body&quot;:&quot;Laughter is poison to fear.&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;roro-uhoris-u909pp&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:52:26.124Z&quot;,&quot;favorited&quot;:true},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-hmvurd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T23:09:46.103Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;api testing is easy&quot;,&quot;title&quot;:&quot;request from postman&quot;,&quot;body&quot;:&quot;hello bros&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;request-from-postman-nk9eos&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:52:38.701Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;Joose&quot;},&quot;description&quot;:&quot;Carros&quot;,&quot;title&quot;:&quot;Carros&quot;,&quot;body&quot;:&quot;Fusca&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;carros-jz1mqr&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:47.818Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;dbeltran&quot;},&quot;description&quot;:&quot;atas&quot;,&quot;title&quot;:&quot;testasrfat&quot;,&quot;body&quot;:&quot;atasd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testasrfat-z4j6sd&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:48:46.085Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;@@tester&quot;},&quot;description&quot;:&quot;testing this app&quot;,&quot;title&quot;:&quot;testing&quot;,&quot;body&quot;:&quot;this is a test&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;testing-nq00b1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:45:30.302Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;Sunspear&quot;,&quot;title&quot;:&quot;Wilbert&quot;,&quot;body&quot;:&quot;And I have a tender spot in my heart for cripples and bastards and broken things.&quot;,&quot;favoritesCount&quot;:1,&quot;slug&quot;:&quot;wilbert-fic14e&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T22:31:33.692Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;karate0606&quot;},&quot;description&quot;:&quot;White Harbor&quot;,&quot;title&quot;:&quot;Jyanna Frey&quot;,&quot;body&quot;:&quot;Never forget who you are. The rest of the world won&#39;t. Wear it like an armor and it can never be used against you.&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;jyanna-frey-mwqm9c&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:57:00.090Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-yfrxe1&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:42:40.369Z&quot;,&quot;favorited&quot;:false},{&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;author&quot;:{&quot;image&quot;:&quot;https:\/\/static.productionready.io\/images\/smiley-cyrus.jpg&quot;,&quot;following&quot;:false,&quot;bio&quot;:null,&quot;username&quot;:&quot;username122&quot;},&quot;description&quot;:&quot;dssdf&quot;,&quot;title&quot;:&quot;asd&quot;,&quot;body&quot;:&quot;sdvsd&quot;,&quot;favoritesCount&quot;:0,&quot;slug&quot;:&quot;asd-wda0o5&quot;,&quot;updatedAt&quot;:&quot;2021-06-21T21:41:09.776Z&quot;,&quot;favorited&quot;:false}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>eval sleep(5000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5024</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:83]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:83]</span>
+                <span class="scenario-name">Number to String</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:83]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:52:51.957 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def foo = 10</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def json = {&quot;bar&quot;: #(foo+&#39;&#39;)}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match json == {&quot;bar&quot;: &#39;10&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:88]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:88]</span>
+                <span class="scenario-name">String to Number</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>58</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:88]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:52:51.973 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def foo = &#39;10&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def json = {&quot;bar&quot;: #(foo*1)}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">32</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def json2 = {&quot;bar&quot;: #(~~parseInt(foo))}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match json == {&quot;bar&quot;: 10}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match json2 == {&quot;bar&quot;: 10}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
