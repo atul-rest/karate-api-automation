@@ -28,4 +28,4 @@ jobs:
       with:
         name: test-report
         path: target/cucumber-html-reports/
-        reporter: ['jest-junit', 'target/cucumber-html-reports/']
+        
