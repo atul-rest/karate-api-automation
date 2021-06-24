@@ -21,9 +21,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Run Karate tests
       run: mvn clean test
-    - name: Archive test report
+
+    - name: Test report
       if: ${{ always() }}
       uses: actions/upload-artifact@v1
       with:
         name: test-report
-        path: output/karate/cucumber-html-reports/
+        path: target/cucumber-html-reports/
+        reporter: jest-junit
