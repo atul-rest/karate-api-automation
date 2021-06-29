@@ -22,7 +22,6 @@ public class CreateTokens {
         return tokens.get(counter.getAndIncrement() % tokens.size());
     }
 
-
     public static void createAccessTokens(){
 
         for(String email: emails){
