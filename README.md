@@ -14,7 +14,7 @@ Optional:
 ## Running in VSC then install below plugins:
 - Cucumber full support
 - Karate Runner
-- Jave extension pack
+- Java extension pack
 
 ## Running in IntelliJ
 If you use IntelliJ IDEA, Cucumber support is built-in, and you can even select a single Scenario within a Feature to run at a time. If you are using the free Community Edition, you can easily install the "Gherkin" and "Cucumber for Java" plugins.
