@@ -34,7 +34,7 @@ mvn archetype:generate \
 
 ## Author
 Atul Dhuri
-Email: atul.dhuri@rest.com.au
+<br/>Email: atul.dhuri@rest.com.au
   
  
 
