@@ -31,6 +31,10 @@ mvn archetype:generate \
   
 ## Resources
 - [The Karate GitHub project](https://github.com/intuit/karate)
+
+## Author
+Atul Dhuri
+Email: atul.dhuri@rest.com.au
   
  
 
