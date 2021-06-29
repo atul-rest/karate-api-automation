@@ -30,10 +30,7 @@ mvn archetype:generate \
   -DartifactId=karate-api-automation
   
 ## Resources
-- The Karate GitHub project
-- REST API Testing with Karate (Baeldung)
-- Karate a Rest Test Tool – Basic API Testing (Joe Colantonio)
-- Karate framework: REST API testing made easy! (Mohammed Aboullaite)
+- [The Karate GitHub project](https://github.com/intuit/karate)
   
  
 
